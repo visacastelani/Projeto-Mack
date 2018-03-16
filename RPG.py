@@ -196,53 +196,74 @@ print("Seu personagem está pronto!\n")
 #MAGO
 
 if sexo == 1 and classe == 1:
-    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome, ", o Mago.\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
+    classe1= ",o Mago"
+    print(nome,classe1)
+    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome, classe1,
+          ".\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
 
     
 elif sexo == 2 and classe == 1:
-    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome, ", a Maga.\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
+    classe1=", a Maga"
+    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome,classe1,
+          ".\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
 
 #MAGO
 ##########################################
 #GUERREIRO
     
 elif sexo == 1 and classe == 2:
-    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome, ", o Guerreiro.\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
+    classe1=", o Guerreiro"
+    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome,classe1,
+          ".\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
 
 elif sexo == 2 and classe == 2:
-    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome, ", a Guerreira.\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
+    classe1=", a Guerreira"
+    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome,classe1,
+          ".\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
 
 #GUERREIRO
 #########################################
 #ARQUEIRO
     
 elif sexo == 1 and classe == 3:
-    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome, ", o Arqueiro.\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
+    classe1=", o Arqueiro"
+    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome,classe1,
+          ".\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
 
 elif sexo == 2 and classe == 3:
-    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome, ", a Arqueira.\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
+    classe1=", a Arqueira"
+    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome,classe1,
+          ".\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
 
 #ARQUEIRO
 #########################################
 #GATUNO
     
 elif sexo == 1 and classe == 4:
-    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome, ", o Gatuno.\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
+    classe1=", o Gatuno"
+    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome,classe1,
+          ".\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
     
 elif sexo == 2 and classe == 4:
-    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome, ", a Gatuna.\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
+    classe1=", a Gatuna"
+    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome,classe1,
+          ".\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
  
 #GATUNO
 ##########################################
 #BARDO
 
 if sexo == 1 and classe == 5:
-    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome, ", o Bardo.\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
+    classe1=", o Bardo"
+    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome,classe1,
+          ".\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
 
 if sexo == 2 and classe == 5:
-    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome, ", a Barda.\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
+    classe1=", a Barda"
+    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome,classe1,
+          ".\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
 
-
+input()
 
 
 
