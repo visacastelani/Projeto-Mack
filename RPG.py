@@ -143,27 +143,27 @@ print("\n\n\nHá muito tempo atrás, uma maldição fora lançada para o Reino(n
       ",até que um dia seja seguro retornar.")
       
 if sexo == 1 and classe == 1:
-    print("As três lendas cumpriram a ordem do rei.\nMas o herdeiro criou um vínculo com o Mago, e já sendo propício às artes místicas, resolveu treina-lo e molda-lo a sua imagem."
+    print("As três lendas cumpriram a ordem do rei.\nMas o herdeiro criou um vínculo com o Mago, e já sendo propício às artes místicas, resolveu treiná-lo e moldá-lo a sua imagem."
           "\n\n\n\n\n25 anos depois...\n\n")
 
 elif sexo == 2 and classe == 1:
-    print("As três lendas cumpriram a ordem do rei.\nMas a herdeira criou um vínculo com o Mago, e já sendo propícia às artes místicas, resolveu treina-la e molda-la a sua imagem."
+    print("As três lendas cumpriram a ordem do rei.\nMas a herdeira criou um vínculo com o Mago, e já sendo propícia às artes místicas, resolveu treiná-la e moldá-la a sua imagem."
           "\n\n\n\n\n25 anos depois...\n\n")
 
 elif sexo == 1 and classe == 2:
-    print("As três lendas cumpriram a ordem do rei.\nMas o herdeiro criou um vínculo com o Guerreiro, e já que era forte fisicamente e determinada, resolveu treina-lo e molda-lo a sua imagem. "
+    print("As três lendas cumpriram a ordem do rei.\nMas o herdeiro criou um vínculo com o Guerreiro, e já que era forte fisicamente e determinada, resolveu treiná-lo e moldá-lo a sua imagem. "
           "\n\n\n\n\n25 anos depois...\n\n")
     
 elif sexo == 2 and classe == 2:
-    print("As três lendas cumpriram a ordem do rei.\nMas a herdeira criou um vínculo com o Guerreiro, e já que era forte fisicamente e determinada, resolveu treina-la e molda-la a sua imagem. "
+    print("As três lendas cumpriram a ordem do rei.\nMas a herdeira criou um vínculo com o Guerreiro, e já que era forte fisicamente e determinada, resolveu treiná-la e moldá-la a sua imagem. "
           "\n\n\n\n\n25 anos depois...\n\n")
     
 elif sexo == 1 and classe == 3:
-    print("As três lendas cumpriram a ordem do rei.\nMas o herdeiro criou um vínculo com o Arqueiro, e já que possuía certa agilidade e uma boa mira, resolveu treina-lo e molda-lo a sua imagem. "
+    print("As três lendas cumpriram a ordem do rei.\nMas o herdeiro criou um vínculo com o Arqueiro, e já que possuía certa agilidade e uma boa mira, resolveu treiná-lo e moldá-lo a sua imagem. "
           "\n\n\n\n\n25 anos depois...\n\n")
 
 elif sexo == 2 and classe == 3:
-    print("As três lendas cumpriram a ordem do rei.\nMas a herdeira criou um vínculo com o Arqueiro, e já que possuía certa agilidade e uma boa mira, resolveu treina-la e molda-la a sua imagem.  "
+    print("As três lendas cumpriram a ordem do rei.\nMas a herdeira criou um vínculo com o Arqueiro, e já que possuía certa agilidade e uma boa mira, resolveu treiná-la e moldá-la a sua imagem.  "
           "\n\n\n\n\n25 anos depois...\n\n")
 #########MAGO
 if classe == 1:
