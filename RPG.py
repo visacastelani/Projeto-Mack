@@ -6,25 +6,29 @@ agilidade = 0
 carisma = 0
 
 #RPG
-comecar = str(input('Digite "START" para começar o jogo '))
+comecar = str(input('Aperte "ENTER" para começar o jogo '))
 comecar.upper()
 
-if comecar == "START":
-    print("Você está prestes a vivenciar uma experiência única, mas antes vamos ao seu personagem...")
+if comecar == "":
+    print("Você está prestes a vivenciar uma experiência única!"
+          "\n\nMas antes vamos ao seu personagem...")
 
-nome= str(input("Digite seu nome: "))
+nome= str(input("\nDigite seu nome: "))
 
-sexo= int(input("Digite '1' para sexo masculino ou '2' para feminino: "))
+sexo= int(input("\nDigite '1' para sexo masculino ou '2' para feminino: "))
           
 classe = int(input("\nBem vindo ao menu de seleção de classes."
-                   "\nPara selecionar apenas digite o número referente à classe:\n \nMago 1 \nGuerreiro 2 \nArqueiro 3 \nGatuno 4 \nBardo 5 \n"))
-                  
+                   "\nPara selecionar apenas digite o número referente à classe:"
+                   "\n \n[1] Mago: Os oráculos de Macadura  "
+                   "\n[2] Guerreiro: Os mlk que não faz nada HUE  "
+                   "\n[3] Arqueiro: Os Discipulos de Vicasa  "))
 
+    
 ##########################################
 
 #MAGO
 if sexo == 1 and classe == 1:
-    print("\n",nome, ", o Mago")
+    print("\n",nome, ", o Oraculo de Macadura")
     forca = 2
     vitalidade = 3
     inteligencia = 8
@@ -39,7 +43,7 @@ if sexo == 1 and classe == 1:
 
     
 elif sexo == 2 and classe == 1:
-    print("\n",nome ,", a Maga")
+    print("\n",nome ,", o Oraculo de Macadura")
     forca = 2
     vitalidade = 3
     inteligencia = 8
@@ -58,7 +62,7 @@ elif sexo == 2 and classe == 1:
 
 #GUERREIRO
 elif sexo == 1 and classe == 2:
-    print("\n",nome, ", o Guerreiro")
+    print("\n",nome, ", A Força de Leo")
     forca = 8
     vitalidade = 5
     inteligencia = 1
@@ -72,7 +76,7 @@ elif sexo == 1 and classe == 2:
           "\nCarisma: ",carisma)
 
 elif sexo == 2 and classe == 2:
-    print("\n",nome ,", a Guerreira")
+    print("\n",nome ,", A Força de Leo")
     forca = 8
     vitalidade = 5
     inteligencia = 1
@@ -90,7 +94,7 @@ elif sexo == 2 and classe == 2:
 
 #ARQUEIRO
 elif sexo == 1 and classe == 3:
-    print("\n",nome, ", o Arqueiro")
+    print("\n",nome, ", o Discípulo de Vicasa")
     forca = 4
     vitalidade = 5
     inteligencia = 1
@@ -106,7 +110,7 @@ elif sexo == 1 and classe == 3:
 
 
 elif sexo == 2 and classe == 3:
-    print("\n",nome ,", a Arqueira")
+    print("\n",nome ,", a Discípula de Vicasa")
     forca = 4
     vitalidade = 5
     inteligencia = 1
@@ -122,73 +126,6 @@ elif sexo == 2 and classe == 3:
 
 ##########################################
     
-#GATUNO
-elif sexo == 1 and classe == 4:
-    print("\n",nome, ", o Gatuno")
-    forca = 3
-    vitalidade = 5
-    inteligencia = 5
-    agilidade = 9
-    carisma = 4
-    print("\nStatus: ",
-          "\nForça: ",forca,
-          "\nVitalidade: ",vitalidade,
-          "\nInteligência: ",inteligencia,
-          "\nAgilidade: ",agilidade,
-          "\nCarisma: ",carisma)
-
-
-
-elif sexo == 2 and classe == 4:
-    print("\n",nome ,", a Gatuna")
-    forca = 3
-    vitalidade = 5
-    inteligencia = 5
-    agilidade = 9
-    carisma = 4
-    print("\nStatus: ",
-          "\nForça: ",forca,
-          "\nVitalidade: ",vitalidade,
-          "\nInteligência: ",inteligencia,
-          "\nAgilidade: ",agilidade,
-          "\nCarisma: ",carisma)
-#GATUNO
-
-##########################################
-    
-#BARDO
-if sexo == 1 and classe == 5:
-    print("\n",nome, ", o Bardo")
-    forca = 2
-    vitalidade = 3
-    inteligencia = 5
-    agilidade = 3
-    carisma = 9
-    print("\nStatus: ",
-          "\nForça: ",forca,
-          "\nVitalidade: ",vitalidade,
-          "\nInteligência: ",inteligencia,
-          "\nAgilidade: ",agilidade,
-          "\nCarisma: ",carisma)
-
-    
-elif sexo == 2 and classe == 5:
-    print("\n",nome ,", a Barda")
-    forca = 2
-    vitalidade = 3
-    inteligencia = 5
-    agilidade = 3
-    carisma = 9
-    print("\nStatus: ",
-          "\nForça: ",forca,
-          "\nVitalidade: ",vitalidade,
-          "\nInteligência: ",inteligencia,
-          "\nAgilidade: ",agilidade,
-          "\nCarisma: ",carisma)
-          
-#BARDO
-
-##########################################
 
 print("Seu personagem está pronto!\n")
 
@@ -237,31 +174,10 @@ elif sexo == 2 and classe == 3:
 
 #ARQUEIRO
 #########################################
-#GATUNO
-    
-elif sexo == 1 and classe == 4:
-    classe1=", o Gatuno"
-    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome,classe1,
-          ".\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
-    
-elif sexo == 2 and classe == 4:
-    classe1=", a Gatuna"
-    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome,classe1,
-          ".\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
- 
-#GATUNO
-##########################################
-#BARDO
 
-if sexo == 1 and classe == 5:
-    classe1=", o Bardo"
-    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome,classe1,
-          ".\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
 
-if sexo == 2 and classe == 5:
-    classe1=", a Barda"
-    print("\nBem-vindo ao mundo medieval de (Nome a decidir)", nome,classe1,
-          ".\nEsteja ciente que suas escolhas irão formar seu futuro, então escolha com sabedoria.")
+
+print("\n\n\nATO I : ")
 
 input()
 
