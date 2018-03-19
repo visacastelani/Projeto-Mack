@@ -4,7 +4,7 @@ hp = 10
 enemyHP = 10
 
 print("Você encontra um inimigo pelo caminho. Ele parece estar distraído."
-      "Deseja tentar passar despercebido? (Chance = 3 em 5 de sucesso)")
+      "Deseja tentar passar despercebido? (Chance = 3 em 4 de sucesso)")
 
 opcao = str(input("Digite 'Stealth' para passar sorrateiramente ou Lutar para lutar"))
 opcao = opcao.upper()
@@ -45,6 +45,7 @@ if opcao == "STEALTH":
 
             elif enemyHP == 0 or enemyHP < 0:
                 print("\n\n\n\nVocê derrotou o inimigo!")
+                morte = 1
                 break
 
 
@@ -75,7 +76,7 @@ elif opcao =="LUTAR":
         elif enemyHP == 0 or enemyHP < 0:
             print("\n\n\n\nVocê derrotou o inimigo!")
             break
-    
+    input()
 
                 
 

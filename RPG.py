@@ -1,9 +1,3 @@
-#STATUS
-forca = 0
-vitalidade = 0
-inteligencia = 0
-agilidade = 0
-carisma = 0
 
 #RPG
 comecar = str(input('Aperte "ENTER" para começar o jogo '))
@@ -132,7 +126,7 @@ elif sexo == 2 and classe == 3:
 
 
 #########INÍCIO
-print("\n\n\nHá muito tempo atrás, uma maldição fora lançada para o Reino(nome)"
+print("\n\n\nHá muito tempo atrás, uma maldição fora lançada sobre o Reino(nome)"
       "por uma Bruxa muito poderosa."
       "\nSabendo da maldição, o rei e a rainha chamaram as três lendas mais"
       " poderoas do Reino: \n\n-Hmacadura, o sábio Mago"
@@ -143,34 +137,41 @@ print("\n\n\nHá muito tempo atrás, uma maldição fora lançada para o Reino(n
       ",até que um dia seja seguro retornar.")
       
 if sexo == 1 and classe == 1:
-    print("As três lendas cumpriram a ordem do rei.\nMas o herdeiro criou um vínculo com o Mago, e já sendo propício às artes místicas, resolveu treiná-lo e moldá-lo a sua imagem."
+    print("\n\nAs três lendas cumpriram a ordem do rei."
+          "\nMas o herdeiro criou um vínculo com o Mago,"
+          "e já sendo propício às artes místicas, resolveu treiná-lo e moldá-lo a sua imagem."
           "\n\n\n\n\n25 anos depois...\n\n")
 
 elif sexo == 2 and classe == 1:
-    print("As três lendas cumpriram a ordem do rei.\nMas a herdeira criou um vínculo com o Mago, e já sendo propícia às artes místicas, resolveu treiná-la e moldá-la a sua imagem."
+    print("\n\nAs três lendas cumpriram a ordem do rei.\nMas a herdeira criou um vínculo com o Mago,"
+          "e já sendo propícia às artes místicas, resolveu treiná-la e moldá-la a sua imagem."
           "\n\n\n\n\n25 anos depois...\n\n")
 
 elif sexo == 1 and classe == 2:
-    print("As três lendas cumpriram a ordem do rei.\nMas o herdeiro criou um vínculo com o Guerreiro, e já que era forte fisicamente e determinada, resolveu treiná-lo e moldá-lo a sua imagem. "
+    print("\n\nAs três lendas cumpriram a ordem do rei.\nMas o herdeiro criou um vínculo com o Guerreiro,"
+          "e já que era forte fisicamente e determinada, resolveu treiná-lo e moldá-lo a sua imagem. "
           "\n\n\n\n\n25 anos depois...\n\n")
     
 elif sexo == 2 and classe == 2:
-    print("As três lendas cumpriram a ordem do rei.\nMas a herdeira criou um vínculo com o Guerreiro, e já que era forte fisicamente e determinada, resolveu treiná-la e moldá-la a sua imagem. "
+    print("\n\nAs três lendas cumpriram a ordem do rei.\nMas a herdeira criou um vínculo com o Guerreiro,"
+          "e já que era forte fisicamente e determinada, resolveu treiná-la e moldá-la a sua imagem. "
           "\n\n\n\n\n25 anos depois...\n\n")
     
 elif sexo == 1 and classe == 3:
-    print("As três lendas cumpriram a ordem do rei.\nMas o herdeiro criou um vínculo com o Arqueiro, e já que possuía certa agilidade e uma boa mira, resolveu treiná-lo e moldá-lo a sua imagem. "
+    print("\n\nAs três lendas cumpriram a ordem do rei.\nMas o herdeiro criou um vínculo com o Arqueiro,"
+          "e já que possuía certa agilidade e uma boa mira, resolveu treiná-lo e moldá-lo a sua imagem. "
           "\n\n\n\n\n25 anos depois...\n\n")
 
 elif sexo == 2 and classe == 3:
-    print("As três lendas cumpriram a ordem do rei.\nMas a herdeira criou um vínculo com o Arqueiro, e já que possuía certa agilidade e uma boa mira, resolveu treiná-la e moldá-la a sua imagem.  "
+    print("\n\nAs três lendas cumpriram a ordem do rei.\nMas a herdeira criou um vínculo com o Arqueiro,"
+          "e já que possuía certa agilidade e uma boa mira, resolveu treiná-la e moldá-la a sua imagem.  "
           "\n\n\n\n\n25 anos depois...\n\n")
 #########MAGO
 if classe == 1:
     print(nome,"estava lendo na antiga biblioteca, quando então um servo veio trazer uma mensagem:",
           "\n\n'",mentor," lhe chama '."
           "\nSem demora",nome,",reune suas coisas e vai em direção ao seu Mentor, curioso"
-          " com o que ele poderia querer lhe contar")
+          " com o que ele poderia querer lhe contar.\n\n")
 #########MAGO
 
 #########GUERREIRO
@@ -178,7 +179,7 @@ elif classe == 2:
     print(nome,"estava treinando na academia, quando então um servo veio trazer uma mensagem:",
           "\n\n'",mentor," lhe chama '."
           "\nSem demora",nome,",reune suas coisas e vai em direção ao seu Mentor, curioso"
-          " com o que ele poderia querer lhe contar")
+          " com o que ele poderia querer lhe contar.\n\n")
 #########GUERREIRO
 
 #########ARQUEIRO
@@ -186,16 +187,18 @@ else:
     print(nome,"estava treinando com seus alvos, quando então um servo veio trazer uma mensagem:",
           "\n\n'",mentor," lhe chama '."
           "\nSem demora",nome,",reune suas coisas e vai em direção ao seu Mentor, curioso"
-          " com o que ele poderia querer lhe contar")
+          " com o que ele poderia querer lhe contar.\n\n")
 #########ARQUEIRO
 
     print("\n\nAo chegar,",nome,"pede licença:",
           "\n\n-Olá",mentor,"! Queria me ver?"
-          "\n\n-Entre",nome,",há algo que preciso contar.")
+          "\n\n-Entre",nome,",há algo que preciso contar.\n\n")
 
+print("################## ESCOLHA ##################")
 dialogo = int(input("\n-Ora, o que é dessa vez? Lembre-se que não tenho tempo para rumores bobos!(1)\n"
                     "\n\n-O que me conta? Noticias do Reino?(2)\n"))
 ########MAGO
+
 if dialogo == 1 and classe == 1:
     print("\n-Não seja arrogante",nome,". Talvez passar muito tempo com os livros tenha"
           " te feito esquecer como ter modos.\n")
@@ -213,16 +216,45 @@ elif dialogo == 2 and classe ==2:
 
 #########ARQUEIRO
 elif dialogo == 1 and classe == 3:
+              print("################## ESCOLHA ##################") 
               print("\n\n-Está esquecendo uma das maiores virtudes",nome,"? A pressa é a maior inimiga da precisão!\n")
 elif dialogo == 2 and classe == 3:
               print("\n\n-Você já é grande,",nome,"! Está na hora de retomar o que é seu!\n")
 #########ARQUEIRO  
 
-#########INÍCIO
+#########PRÓLOGO
 
+print("\n-Enfim chegara a hora."
+      "\n\nDisse",mentor,
+      "\n\n-Você deve retornar ao Reino e livra-lo do mal que o assola.\n"
+      ,nome," sentiu seu estômago esfriar enquanto",mentor," terminava suas palavras"
+      "\n\n-Como posso combater algo que mal conheço?"
+      "\nPerguntou ",nome,
+      "\n\n-Os antigos ja contavam histórias sobre bruxas",nome,"."
+      "\n Se quiser saber sobre a fonte do mal, consulte os documentos"
+      " que encontrar ao longo da sua jornada."
+      "\n\n Mas lembre-se. a batalha nem sempre é a melhor opção!")
+#########PRÓLOGO
+print(nome," então partiu para o Reino. O caminho"
+      " seria longo, passaria por montanhas e florestas."
+      " e não sabia, por fim, o que poderia enfrentar durante"
+      " a sua jornada.")
 
+print("################## ESCOLHA ##################")
+print(nome)
+caminho = int(input(" chegara ao pé do que parecia ser uma infinita montanha."
+                  "\nPercebeu em seu mapa então, que haviam dois caminhos para se tomar:"
+                  "\n\n)(1)O primeiro, mais longo, por fora da montanha, demoraria dias para cruza-la"
+                  "\n\n(2)O segundo, por uma antiga mina de carvão, usada por mineradores antes mesmo de nascer."))
 
-
+if caminho == 1:
+    print(nome,"decidiu então pelo primeiro caminho."
+          "\nNão sabia quais perigos poderiam o aguardar pelas minas,"
+          "\ncom certeza, a primeira opção lhe parecia mais segura")
+else:
+    print("\nMesmo com receio do que poderia encontrar",nome," optou pela mina."
+              "\nO caminho seria mais curto, e tempo era um luxo que ele"
+              " não podia esbanjar")
 
 
 

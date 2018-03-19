@@ -35,4 +35,4 @@ while hp >0 or enemyHP >0:
     elif enemyHP == 0 or enemyHP < 0:
         print("Você derrotou o inimigo!")
         break
-    
+    input()
