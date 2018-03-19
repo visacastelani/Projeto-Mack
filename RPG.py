@@ -31,7 +31,7 @@ classe = int(input("\nBem vindo ao menu de seleção de classes."
                    "\nPara selecionar apenas digite o número referente à classe:"
                    "\n(1) Mago: Os Oráculos de Hmacadura  "
                    "\n(2) Guerreiro: Os Guerreiros de Lepercia"
-                   "\n(3) Arqueiro: Os Discipulos de Vicasa  \n"))
+                   "\n(3) Arqueiro: Os Discípulos de Vicasa  \n"))
 
     
 ##########################################
