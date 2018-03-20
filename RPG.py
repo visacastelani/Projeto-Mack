@@ -261,6 +261,21 @@ else:
     print("\nMesmo com receio do que poderia encontrar",nome," optou pela mina."
               "\nO caminho seria mais curto, e tempo era um luxo que ele"
               " não podia esbanjar")
+#########CAMINHO PELA MONTANHA
+if caminho == 1:
+    print("\nComeçou então a escalada, antigos caminhos de pedras"
+          "usados por pastores de ovelhas pareciam ser a rota clara."
+          "\nJá era tarde, e",nome," já pensava em como passaria"
+          " a noite.\nAvistou então, ao topo da montanha, o que parecia ser"
+          " uma velha cabana")
+print("\n\n################## ESCOLHA ##################")
+    cabana = str(input("\nPelo menos de longe, parece ser um local seguro"
+                       " para passa a noite. O herdeiro então decide: "
+                       "\n\n(1)Ir até a cabana e verificar o local.
+                       "\n\n(2)Fazer uma fogueira e passar a noite ao ar livre.\n"))
+    if cabana == 1:
+        print(nome," decidiu então por passar a noite na cabana, mas precisaria visitar"
+              " o local primeiro, para saber se era seguro.")
 
 
 
