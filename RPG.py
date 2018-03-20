@@ -232,11 +232,11 @@ elif dialogo == 2 and classe == 3:
 
 print("\n-Enfim chegara a hora."
       "\n\nDisse",mentor,
-      "\n\n-Você deve retornar ao Reino e livra-lo do mal que o assola.\n"
+      "\n\n-Você deve retornar ao Reino e livrá-lo do mal que o assola.\n"
       ,nome," sentiu seu estômago esfriar enquanto",mentor," terminava suas palavras"
       "\n\n-Como posso combater algo que mal conheço?"
       "\nPerguntou ",nome,
-      "\n\n-Os antigos ja contavam histórias sobre bruxas",nome,"."
+      "\n\n-Os antigos já contavam histórias sobre bruxas",nome,"."
       "\n Se quiser saber sobre a fonte do mal, consulte os documentos"
       " que encontrar ao longo da sua jornada."
       "\n\n Mas lembre-se. a batalha nem sempre é a melhor opção!")
@@ -251,7 +251,7 @@ print(nome)
 caminho = int(input(" chegara ao pé do que parecia ser uma infinita montanha."
                   "\nPercebeu em seu mapa então, que haviam dois caminhos para se tomar:"
                   "\n\n)(1)O primeiro, mais longo, por fora da montanha, demoraria dias para cruza-la"
-                  "\n\n(2)O segundo, por uma antiga mina de carvão, usada por mineradores antes mesmo de nascer."))
+                  "\n\n(2)O segundo, por uma antiga mina de carvão, usada por mineradores antes mesmo de nascer.\n"))
 
 if caminho == 1:
     print(nome,"decidiu então pelo primeiro caminho."
