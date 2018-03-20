@@ -1,20 +1,26 @@
 
 #RPG
-comecar = str(input('Aperte "ENTER" para começar o jogo '))
+
+comecar = str(input("Digite 'START' para começar o jogo "))
+comecar = comecar.upper()
 
 
-if comecar == "":
-    print("\n\nVocê está prestes a vivenciar uma experiência única!"
-          "\n\nMas antes, um pequeno tutorial:"
-          "\nO <jogo> é narrado, e opções de diálogo são dadas ao protagonista."
-          " Para escolhe-las, digite apenas o número que"
-          " corresponda a opção desejada."
-          "\nAs mensagens que precisarão da escolha do usuário"
-          " virão acompanhadas de números. \n\nEX:"
-          "\n\n     (1) A"
-          "\n\n     (2) B"
-          "\n\n     (3) C"
-          "\n\nDito isto, vamos ao seu personagem...")
+while comecar != "START":
+    print("\n\nPor favor, digite 'START'")
+    comecar = str(input('\n\nDigite "START" para começar o jogo '))
+    comecar = comecar.upper()
+    if comecar == "START":
+        print("\n\nVocê está prestes a vivenciar uma experiência única!"
+                "\n\nMas antes, um pequeno tutorial:"
+                "\nO <jogo> é narrado, e opções de diálogo são dadas ao protagonista."
+                " Para escolhe-las, digite apenas o número que"
+                " corresponda a opção desejada."
+                "\nAs mensagens que precisarão da escolha do usuário"
+                " virão acompanhadas de números. \n\nEX:"
+                "\n\n     (1) A"
+                "\n\n     (2) B"
+                "\n\n     (3) C"
+                "\n\nDito isto, vamos ao seu personagem...")
 
 nome= str(input("\nDigite seu nome: "))
 
