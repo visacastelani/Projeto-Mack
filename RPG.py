@@ -1,5 +1,7 @@
 from random import randint 
 #RPG
+hp = 10
+enemyHP = 10
 
 comecar = str(input("Digite 'START' para começar o jogo "))
 comecar = comecar.upper()
@@ -396,11 +398,166 @@ elif caminho == 2:
               "\n Foi a primeira vez que me senti realmente útil, pois minhas ações e habilidades sempre foram associadas com trapaceiros,"
               "\n e ladrões, mas nesse dia me senti como se fosse Agar, o Herói.")
     
-print("\n\n\nEnfim, passado alguns dias",nome," já conseguiu ver a grande floresta Mork."
+print("\n\n\nEnfim, passado alguns dias",nome," já conseguia ver a grande floresta Mork."
       "\nTodos a temiam, estava claro o por quê."
       "\nÁrvores altas como gigantes e sombras negras que espantavam qualquer viajante"
       "\nAquele não era um lugar para ficar de passagem.\n",nome," precisava logo"
-      " sair dali.")
+      " sair dali."
+      "\n\nO problema então, surgia ali.\nEm seu mapa",nome," observou uma bifurcação"
+      ", ambos os caminhos levavam ao castelo, o epicentro da maldição, porém passavam por locais"
+      " diferentes,\nmas igualmente ameaçadores")
+
+print("\n\n################## ESCOLHA ##################\n\n")
+
+caminho2 = int(input("\n\n(1) A Leste, o caminho levava para Dodsgrotte, uma antiga gruta"
+                     " dita ser abandonada, mas que era lar da poderosa Bruxa em tempos antigos."
+                     "\n(2) A Oeste, Landsbyen, uma vila de elfos, que outrora exalava sabedoria"
+                     " antiga."))
+
+
+
+####COMEÇO CAMINHO 1 LESTE
+if caminho2 == 1:
+    print("\n\nO espirito de aventura queimava forte em ",nome,".\n"
+          "Decidiu então partir para Dodsgrotte. Quem sabe quais mistérios"
+          " ainda podiam ser revelados no lar da Bruxa."
+          "\n\nAlguns dias de viagem separavam ",nome," de seu destino, era melhor se apressar,"
+          "\nventos sinistros sopraram, e algo das sombras parecia lhe observar."
+          "\nCom mais alguns dias de viagem ",nome," se deparou com algumas placas indicando o caminho"
+          "\npara o reino, sabia que então, a Gruta estava perto\n"
+          ,nome," se deparou com a entrada da caverna, tão sinistra quanto pudera imaginar."
+          "\nTeve então, de escolher: ")
+
+    print("\n\n################## ESCOLHA ##################\n\n")
+
+    gruta = int(input("(1) Entrar na Gruta e tentar encontrar algum documento que"
+                      " contesse alguma informação útil."
+                      "\n(2) É mais sabido preservar a vida e continuar sua história,"
+                      "\nProvavelmente a opção mais segura seria ignorar a Gruta e seguir para o Reino"))
+    if gruta == 1:
+        print(nome," estava mesmo determinado em descobrir mais sobre os mistérios da maldição."
+              "\nNa Gruta então, ele adentrou.\nSua respiração não conseguia esconder seu medo,"
+              "\nmas o olhar em seus olhos mostravam fogo e coragem.\n\n"
+              "Barulhos estranhos podiam ser ouvidos ao fundo, logo sua respiração já"
+              " estava mais pesada.\n"
+              "Uma silhueta já podia ser vista, às sombras de uma fogueira crepitante."
+              "\nQuanto mais próximo chegava",nome," podia ver com mais clareza a criatura que guardava"
+              " a caverna da Bruxa."
+              "\nEra horrível, o corpo já estava morto há muito tempo",nome," não conseguia"
+              " entender como ainda estava de pé."
+              "\nO monstro estava próximo ao fogo, e um armário podia ser visto ao fundo."
+              "\nAlgo ali prendeu a atenção de ",nome,".\nHavia o que parecia ser velhos pergaminhos"
+              " próximos a uma montanha de livros velhos."
+              "\n",nome," precisava se decidir ali:")
+
+        print("\n\n################## ESCOLHA ##################\n\n")
+
+
+        stealth = int(input("\n\n(1) Tentar passar sorrateiramente e roubar os documentos."
+                                "\n(2) Voltar a entrada e seguir o caminho."))
+        if stealth == 1:
+        
+            chance = randint(0,3)
+
+            if chance == 0 or chance == 1:
+                ##########################INSERIR O LIVRO
+                print("\nVocê conseguiu se esgueirar, apanhou uma bolsa com alguns livros e documentos"
+                      " e correu para um lugar seguro.")
+
+            elif chance == 2 or chance == 3:
+                print("\nO inimigo te notou, prepare-se!")
+                while hp >0 or enemyHP >0:
+        
+                    if hp >0 or enemyHP >0:
+
+                        #DANO RECEBIDO
+                        dmg = randint(0,2)
+                        hp = hp - dmg
+                        
+                        #DANO CAUSADO
+                        dmg1 = randint(0,3)
+                        enemyHP = enemyHP - dmg1
+
+                        print("\nO inimigo irá atacar, defenda-se!")
+                        print("\nDMG: ",dmg,
+                            "\nHP: " ,hp)
+                        if  hp == 0 or hp < 0:
+                            print("\n\n\n\nVocê lembra das histórias que contavam sobre os bosques."
+                                  "\nInfelizmente,todas elas eram verdadeiras."
+                                  "\nVocê esta morto!")
+                            break
+                            
+
+                        print("\nSua vez de atacar!")
+                        print("\nDMG no Monstro: ", dmg1,
+                                "\nHP do Monstro:", enemyHP,)
+
+                        input("\n\nAperte 'ENTER' para ir para a"
+                            " próxima rodada!")
+
+
+                        
+
+                        if enemyHP == 0 or enemyHP < 0:
+                            print("\n\n\n\nVocê derrotou o inimigo!"
+                                  "\n\nA criatura medonha solta um grito antes de cair"
+                                  " no chão, parecia ter sido morta uma segunda vez"
+                                  "\nPodendo agora olhar com mais calma",nome," olhou pela estante de livros"
+                                  ", pegando alguns que chamaram a sua atenção.")
+                            ##############################################INSERIR LIVRO AQUI
+                            break
+        else:
+            print("\nEnfrentar o monstro e acabar morto por um pedaço"
+                      " de papel era um risco real.",
+                      nome," decidiu então, voltar à entrada.")
+                        
+
+
+
+
+
+    elif gruta == 2:
+        print("\nNenhum documento valeria a pena arriscar o próprio pescoço."
+            "\n",nome," decidiu retornar à entrada.")
+
+####FIM CAMINHO 1
+
+
+####COMEÇO CAMINHO 2 OESTE
+        
+else:
+    print("\nO espirito de curiosidade queimava forte em",nome,".\n"
+          "\nDecidiu então partir para Landsbyen, a antiga Vila de Elfos."
+          "\nQuem sabe quais segredos mais podiam ser revelados\n quando"
+          " compartilhada a sabedoria dos elfos antigos?")
+print("\n",nome," já perdera a conta de quantas horas estava andando"
+      " e a vila não parecia estar ficando mais perto."
+      "\nFinalmente então,",nome," consegue ver distante algum cinal de civilização."
+      "\nApertando o passo, logo se via de frente para a Vila dos elfos."
+      "\nEstranhou o silêncio mortal, mas não estava surpreso."
+      "\nNão havia um sinal de vida na vila.."
+      "\nA noite já estava chegando, não havia muito tempo para nada, então",nome," tinha logo"
+      " que se decidir: ")
+
+print("\n\n################## ESCOLHA ##################\n\n")
+
+vila = int(input("(1) Se abrigar em uma das casas e procurar informações."
+                 "\n(2) Recolher materiais para preparar uma fogueira."))
+
+if vila == 1:
+    print("\nA escolha estava clara e ",nome," sabia o que procurar."
+          "\nQualquer informação sobre a maldição iria ajudar em sua jornada."
+          "\n\nUma das contruções lhe chamou a atenção, mais centralizada"
+          " uma cabana grande de dois andares, parecia ser uma das"
+          " únicas construções que sobreviveu à catastrofes e o tempo,"
+          "\num bom lugar para procurar.")####################INSERIR LIVRO
+else:
+    print("Exausto da viagem,",nome," decide fazer uma fogueira. Se aquecer e alimentar"
+          " a essa hora se tornara também uma questão de sobrevivência."
+          "\nUnindo isso a uma boa noite de sono, o dia seguinte seria produtivo,"
+          "\npouco agora restava do caminho até o Reino.")
+
+####FIM CAMINHO 2
 
 input()
     
