@@ -13,10 +13,10 @@ if opcao == "STEALTH":
     
     chance = randint(0,3)
 
-    if chance == 0 or chance == 1 or chance == 2:
+    if chance == 0 or chance == 1:
         print("\nVocê conseguiu passar sorrateiramente!")
 
-    elif chance == 3 :
+    elif chance == 2 or chance == 3 :
         print("\nO inimigo te notou, prepare-se!")
         while hp >0 or enemyHP >0:
     
@@ -33,20 +33,25 @@ if opcao == "STEALTH":
                 print("\nO inimigo irá atacar, defenda-se!")
                 print("\nDMG: ",dmg,
                     "\nHP: " ,hp)
+                if  hp == 0 or hp < 0:
+                    print("\n\n\n\nVocê esta morto!")
+                    break
                 
+
                 print("\nSua vez de atacar!")
                 print("\nDMG no Monstro: ", dmg1,
                       "\nHP do Monstro:", enemyHP,)
 
+                input("\n\nAperte 'ENTER' para ir para a"
+                                   " próxima rodada!")
 
-            if  hp == 0 or hp < 0:
-                print("\n\n\n\nVocê esta morto!")
-                break
 
-            elif enemyHP == 0 or enemyHP < 0:
-                print("\n\n\n\nVocê derrotou o inimigo!")
-                morte = 1
-                break
+            
+
+                if enemyHP == 0 or enemyHP < 0:
+                    print("\n\n\n\nVocê derrotou o inimigo!")
+                
+                    break
 
 
 elif opcao =="LUTAR":
@@ -81,11 +86,3 @@ elif opcao =="LUTAR":
                         print("\n\nVocê derrotou o inimigo!")
                         break
     input()
-
-                
-
-
-
-
-
-    
