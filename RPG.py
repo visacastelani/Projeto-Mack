@@ -1,4 +1,4 @@
-
+from random import randint 
 #RPG
 
 comecar = str(input("Digite 'START' para começar o jogo "))
@@ -241,6 +241,7 @@ print("\n-Enfim chegara a hora."
       " que encontrar ao longo da sua jornada."
       "\n\n Mas lembre-se. a batalha nem sempre é a melhor opção!")
 #########PRÓLOGO
+
 print(nome," então partiu para o Reino. O caminho"
       " seria longo, passaria por montanhas e florestas."
       " e não sabia, por fim, o que poderia enfrentar durante"
@@ -250,34 +251,156 @@ print("################## ESCOLHA ##################")
 print(nome)
 caminho = int(input(" chegara ao pé do que parecia ser uma infinita montanha."
                   "\nPercebeu em seu mapa então, que haviam dois caminhos para se tomar:"
-                  "\n\n)(1)O primeiro, mais longo, por fora da montanha, demoraria dias para cruza-la"
+                  "\n\n(1)O primeiro, mais longo, por fora da montanha, demoraria dias para cruza-la"
                   "\n\n(2)O segundo, por uma antiga mina de carvão, usada por mineradores antes mesmo de nascer.\n"))
 
+#########CAMINHO PELA MONTANHA
 if caminho == 1:
     print(nome,"decidiu então pelo primeiro caminho."
           "\nNão sabia quais perigos poderiam o aguardar pelas minas,"
-          "\ncom certeza, a primeira opção lhe parecia mais segura")
-else:
-    print("\nMesmo com receio do que poderia encontrar",nome," optou pela mina."
-              "\nO caminho seria mais curto, e tempo era um luxo que ele"
-              " não podia esbanjar")
-#########CAMINHO PELA MONTANHA
-if caminho == 1:
-    print("\nComeçou então a escalada, antigos caminhos de pedras"
+          "\ncom certeza, a primeira opção lhe parecia mais segura"
+          "\nComeçou então a escalada, antigos caminhos de pedras"
           "usados por pastores de ovelhas pareciam ser a rota clara."
           "\nJá era tarde, e",nome," já pensava em como passaria"
           " a noite.\nAvistou então, ao topo da montanha, o que parecia ser"
           " uma velha cabana")
-print("\n\n################## ESCOLHA ##################")
-    cabana = str(input("\nPelo menos de longe, parece ser um local seguro"
-                       " para passa a noite. O herdeiro então decide: "
-                       "\n\n(1)Ir até a cabana e verificar o local.
-                       "\n\n(2)Fazer uma fogueira e passar a noite ao ar livre.\n"))
+
+    print("\n\n################## ESCOLHA ##################")
+
+    cabana = int(input("\nPelo menos de longe, parece ser um local seguro"
+                           " para passa a noite. O herdeiro então decide: "
+                           "\n\n(1)Ir até a cabana e verificar o local."
+                           "\n\n(2)Fazer uma fogueira e passar a noite ao ar livre.\n"))
+
     if cabana == 1:
         print(nome," decidiu então por passar a noite na cabana, mas precisaria visitar"
-              " o local primeiro, para saber se era seguro.")
+                  " o local primeiro, para saber se era seguro."
+                  "\nAo chegar próximo a cabana",nome," começou a escutar barulhos estranhos"
+                  " vindos da velha casa. \nSe aproximando com cautela, abriu a porta e entrou."
+                  "\nNada a vista, o lugar parecia mesmo seguro, até que...:"
+                  "\n\n-RAAAWRRRRRRR!!!!")
+        
+        hp = 10
+        enemyHP = 10
+
+        lutar = str(input("\n\nDigite 'LUTAR' para comaçar o duelo!"))
+        lutar = lutar.upper()
+
+        while lutar != "LUTAR":
+                lutar = str(input("\n\nDigite 'LUTAR' para começar o duelo!"))
+                lutar = lutar.upper()
+
+        if lutar == "LUTAR":
+
+                while hp > 0 or enemyHP > 0:
+                        
+                        print("\nO inimigo irá atacar, defenda-se!")
+                        #DANO RECEBIDO
+                        dmg = randint(0,2)
+                        hp = hp - dmg
+                        print("\n####   DANO RECEBIDO: ",dmg,
+                        "\n####   HP ATUAL:      " ,hp)
+                        if  hp == 0 or hp < 0:
+                                print("\n\nA batalha foi árdua, você lutou"
+                                      " bravamente, mas infelizmente"
+                                      " as forças das trevas venceram."
+                                      "\n\nVocê esta morto!")
+                                vitoria = 0
+                                break
+                        
+                                   
+                                                    
+                        print("\nSua vez de atacar!")
+                        #DANO CAUSADO
+                        dmg1 = randint(0,3)
+                        enemyHP = enemyHP - dmg1
+                        print("\n####   DANO CAUSADO: ", dmg1,
+                        "\n####   HP DO MONSTRO:", enemyHP)
+
+                        input("\n\nAperte 'ENTER' para ir para a"
+                                           " próxima rodada!")
+
+                        
+
+                        if enemyHP == 0 or enemyHP < 0:
+                                print("\n\nVocê derrotou o inimigo!")
+                                vitoria = 1
+                                break
+        if vitoria == 1:
+            print("\n\nHavia um esqueleto dentro da cabana!"
+                  "\nEle te atacou de surpresa, mas seu tempo"
+                  " de treino fez valer e você conseguiu derrota-lo!"
+                  "\n\n",nome," olhou em volta e percebeu uma velha bolsa"
+                  " de couro, largada próximo a uma mesa."
+                  "\nAo chegar perto, notara que havia uma carta, e então"
+                  " decidiu lê-la.\n\nA carta dizia.....:"
+                  "\n\nEspero que alguém leia essa carta..."
+                  "\n\nMeu nome é Grace, a Arcana Branca. Ou pelo menos era antes de toda essa bagunça."
+                  "Quando aquela Bruxa das Trevas retornou, pensávamos que não sofríamos tanto perigo,"
+                  "\n mas ela conseguiu encontrar um livro de feitiços, que foi escrito pelo primeiro"
+                  "\n Necromante que pisou nessas terras e acabara de lançar sua maldição. O desespero foi geral,"
+                  "\n muitos ficaram paralisados esperando seu infeliz destino, outros se uniram e fugiram rapidamente."
+                  "\n Mas outros escaparam sem honra, assim como eu. Não me arrependo do que eu fiz, mas também não me orgulho."
+                  "\n Vou contar essa história, em memória da que morreu para que eu pudesse viver."
+                  "\n Fui sempre praticante de magia Branca, ajudava sempre a família de pescadores quando o dia de pesca não fora muito boa,"
+                  "\n em um piscar de olhos suas redes estavam cheias de peixes."
+                  "\n Eles eram amigos de meu irmão e quando ele estava viajando em suas cruzadas, eu os ajudava."
+                  "\n Mas então algo muito estranho aconteceu, era hora do almoço, quando uma mancha negra surgiu no céu."
+                  "\n Eu sabia que aquilo se tratara de uma maldição, chamei a família de pescadores para alertar o que estava acontecendo."
+                  "\n A nuvem se aproximava muito depressa e eles não acreditaram em mim. Estávamos distantes da fronteira do reino,"
+                  "\n foi então que tive uma ideia, não era boa, pois uma Arcana Branca nunca podia pensar em usar magia das Trevas,"
+                  "\n porém era questão de vida e morte. Existia um feitiço de teletransporte que podia usar para nos salvar,"
+                  "\n entretanto exigia um sacrifício. A família preferiu ficar e enfrentar seu destino, eu não tive essa coragem,"
+                  "\n então segurei a filha mais nova da família em meus braços e evaporei dali."
+                  "\n Quando pisquei já estava fora do reino e fora do alcance da maldição. Em meus braços, estava o esqueleto da menininha."
+                  "\n Fazemos o que fazemos para sobreviver, eu fiz a minha escolha, eles fizeram a deles."
+                  "\n Não sou mais digna de meu título, eu mudei a partir daquele dia, meu nome agora é Grace, a Arcana das Trevas.\n\n")
 
 
+        else:
+            print("Não há futuro para alguém morto")
+
+    if cabana == 2:
+        print(nome," decide então acampar em uma clareira próxima."
+          "\nEra melhor e mais seguro, e estava uma noite agradável..")
+
+elif caminho == 2:
+        print("\n\nMesmo com receio do que iria encontrar,",nome," escolheu ir pelas minas.\n"
+              "O caminho pela mina era assustador.\nTudo rangia e fazia barulhos estranhos"
+              "\nAcendera uma torcha para iluminar o seu caminho e adentrou a mina."
+              "\nAlém da escuridão, o ambiente o sufocava e tornavam seus passos mais pesados.\nn",
+              nome," então decidiu descansar próximo ao que parecia ser um alojamento"
+              " dos antigos trabalhadores.\n"
+              "Ao vasculhar alguns velhos sacos largados por ali em busca de algo para comer",
+              nome," encontrou um velho pedaço de papel, gasto e sujo, parecia uma carta."
+              "\nComeçou a lê-la, e nela dizia...\n\n"
+              "Caro leitor, Meu nome é Agar, o Ladino e tenho uma história para contar,"
+              "\n a história de como fugi de Gammelt Rike. Era um dia normal no nosso reino,"
+              "\n crianças brincavam nas ruas, mercenários gastavam seus ouros nas tavernas,"
+              "\n cavaleiros asseguravam a segurança de todos. Até que recebi um contrato real"
+              "\n para investigar uma estranha força mística que surgira na parte leste do reino,"
+              "\n modéstia à parte, sempre fui o melhor ladino do reino. Chegando lá, vi uma sombra se materializando,"
+              "\n foi quando surgiu ela, a mesma bruxa que liderara a Grande Guerra das Bruxas."
+              "\n Ela fora seguida por seu lacaio, que entregara uma espécie de livro,"
+              "\n mas um livro que emanava uma aura negra, até uma caverna. Esperei ao anoitecer para averiguar mais um pouco,"
+              "\n ouvi a bruxa dizer que naquele livro existia uma maldição, mas uma maldição tão poderosa que seria necessário um sacrifício."
+              "\n O lacaio disse que era muito arriscado, pois a vida de sua mestra seria perdida no processo."
+              "\n Levei então as informações até o Rei Arathorn II, neto do Grande Rei Eldarion."
+              "\n Ele reuniu o grande concelho, que incluía as três lendas, as deu ordens que não conheço,"
+              "\n apenas sei que os três não foram mais vistos em Gammelt Rike e que os outros campeões reais foram caçar a bruxa."
+              "\n Depois de dois dias de busca sem nenhum êxito, o Rei ordenou que os cidadãos deveriam se recompor,"
+              "\n pois iria ser servida uma ceia ao meio dia para compensar seus esforços."
+              "\n Porém isso foi um erro, quando todos as pessoas estavam prestes a cear uma nuvem negra como a noite vinha do horizonte,"
+              "\n não tive nenhuma dúvida, montei em meu cavalo e fugi do castelo. Tentei ajudar o máximo de pessoas que pude,"
+              "\n infelizmente não possuo poderes divinos, logo o que pude fazer foi encher uma carruagem com mulheres e crianças e seguir além das montanhas."
+              "\n Foi a primeira vez que me senti realmente útil, pois minhas ações e habilidades sempre foram associadas com trapaceiros,"
+              "\n e ladrões, mas nesse dia me senti como se fosse Agar, o Herói.")
+    
+print("\n\n\nPassado alguns dias",nome," já conseguiu ver a grande floresta Mork."
+      "\nTodos a temiam, estava claro o por quê."
+      "\nÁrvores altas como gigantes e sombras negras que espantavam qualquer viajante"
+      "\nAquele não era um lugar para ficar de passagem.\n",nome," precisava logo"
+      " sair dali."
 
 input()
     
