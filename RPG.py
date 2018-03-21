@@ -396,11 +396,11 @@ elif caminho == 2:
               "\n Foi a primeira vez que me senti realmente útil, pois minhas ações e habilidades sempre foram associadas com trapaceiros,"
               "\n e ladrões, mas nesse dia me senti como se fosse Agar, o Herói.")
     
-print("\n\n\nPassado alguns dias",nome," já conseguiu ver a grande floresta Mork."
+print("\n\n\nEnfim, passado alguns dias",nome," já conseguiu ver a grande floresta Mork."
       "\nTodos a temiam, estava claro o por quê."
       "\nÁrvores altas como gigantes e sombras negras que espantavam qualquer viajante"
       "\nAquele não era um lugar para ficar de passagem.\n",nome," precisava logo"
-      " sair dali."
+      " sair dali.")
 
 input()
     
