@@ -8,7 +8,7 @@ comecar = comecar.upper()
 
 
 while comecar != "START":
-    print("\n\nPor favor, digite 'START'")
+    print("\n\nPor favor, digite '5START'")
     comecar = str(input('\n\nDigite "START" para começar o jogo '))
     comecar = comecar.upper()
     if comecar == "START":
@@ -31,9 +31,9 @@ sexo= int(input("\nDigite (1) para sexo masculino ou (2) para feminino: "))
           
 classe = int(input("\nBem vindo ao menu de seleção de classes."
                    "\nPara selecionar apenas digite o número referente à classe:"
-                   "\n(1) Mago: Os Oráculos de Hmacadura  "
-                   "\n(2) Guerreiro: Os Guerreiros de Lepercia"
-                   "\n(3) Arqueiro: Os Discípulos de Vicasa  \n"))
+                   "\n(1) -Mago: Os Oráculos de Hmacadura  "
+                   "\n(2) -Guerreiro: Os Guerreiros de Lepercia"
+                   "\n(3) -Arqueiro: Os Discípulos de Vicasa  \n"))
 
     
 ##########################################
@@ -41,13 +41,13 @@ classe = int(input("\nBem vindo ao menu de seleção de classes."
 #MAGO
 if sexo == 1 and classe == 1:
     print("\n",nome, ",o Oráculo de Hmacadura")
-    mentor = " Hmacadema"
+    mentor = " Hmacadura"
 
 
     
 elif sexo == 2 and classe == 1:
     print("\n",nome ,",a Oráculo de Hmacadura")
-    mentor = " Hmacadema"
+    mentor = " Hmacadura"
 
           
 #MAGO
@@ -134,7 +134,7 @@ elif sexo == 2 and classe == 3:
 
 
 #########INÍCIO
-print("\n\n\nHá muito tempo atrás, uma maldição fora lançada sobre o Reino(nome)"
+print("\n\n\nHá muito tempo atrás, uma maldição fora lançada sobre o Reino de Gammelt Rike"
       "por uma Bruxa muito poderosa."
       "\nSabendo da maldição, o rei e a rainha chamaram as três lendas mais"
       " poderoas do Reino: \n\n-Hmacadura, o sábio Mago"
@@ -204,21 +204,21 @@ else:
 
 print("################## ESCOLHA ##################")
 dialogo = int(input("\n-Ora, o que é dessa vez? Lembre-se que não tenho tempo para rumores bobos!(1)\n"
-                    "\n\n-O que me conta? Noticias do Reino?(2)\n"))
+                    "\n\n-O que me conta? Notícias do Reino?(2)\n"))
 ########MAGO
 
 if dialogo == 1 and classe == 1:
     print("\n-Não seja arrogante",nome,". Talvez passar muito tempo com os livros tenha"
           " te feito esquecer como ter modos.\n")
 elif dialogo == 2 and classe ==1:
-    print("\n-Pergaminhos voaram do Reino, está na hora de retomar o que é seu!\n")
+    print("\n-Acabo de ter uma visão, está na hora de retomar o que é seu!\n")
 ########MAGO
 
 ########GUERREIRO
 if dialogo == 1 and classe == 2:
     print("\n-Um guerreiro nao tem apenas força bruta, mas sabe o que é ter respeito, e isto lhe falta.\n")
 elif dialogo == 2 and classe ==2:
-    print("\n-Noticias do Reino. A hora de combater as forças malignas chegou.\n")
+    print("\n-O Mago teve uma visão. A hora de combater as forças malignas chegou.\n")
 ########GUERREIRO
 
 
@@ -250,19 +250,19 @@ print(nome," então partiu para o Reino. O caminho"
       " a sua jornada.")
 
 print("################## ESCOLHA ##################")
-print(nome)
-caminho = int(input(" chegara ao pé do que parecia ser uma infinita montanha."
+print(nome,",")
+caminho = int(input("chegara ao pé do que parecia ser uma infinita montanha."
                   "\nPercebeu em seu mapa então, que haviam dois caminhos para se tomar:"
-                  "\n\n(1)O primeiro, mais longo, por fora da montanha, demoraria dias para cruza-la"
-                  "\n\n(2)O segundo, por uma antiga mina de carvão, usada por mineradores antes mesmo de nascer.\n"))
+                  "\n\n(1)-O primeiro, mais longo, por fora da montanha, demoraria dias para cruzá-la"
+                  "\n\n(2)-O segundo, por uma antiga mina de carvão, usada por mineradores antes mesmo dele nascer.\n"))
 
 #########CAMINHO PELA MONTANHA
 if caminho == 1:
-    print(nome,"decidiu então pelo primeiro caminho."
+    print(nome,"decidiu então ir pelo primeiro caminho."
           "\nNão sabia quais perigos poderiam o aguardar pelas minas,"
           "\ncom certeza, a primeira opção lhe parecia mais segura"
           "\nComeçou então a escalada, antigos caminhos de pedras"
-          "usados por pastores de ovelhas pareciam ser a rota clara."
+          "\nusados por pastores de ovelhas pareciam ser a rota clara."
           "\nJá era tarde, e",nome," já pensava em como passaria"
           " a noite.\nAvistou então, ao topo da montanha, o que parecia ser"
           " uma velha cabana")
@@ -271,8 +271,8 @@ if caminho == 1:
 
     cabana = int(input("\nPelo menos de longe, parece ser um local seguro"
                            " para passa a noite. O herdeiro então decide: "
-                           "\n\n(1)Ir até a cabana e verificar o local."
-                           "\n\n(2)Fazer uma fogueira e passar a noite ao ar livre.\n"))
+                           "\n\n(1)-Ir até a cabana e verificar o local."
+                           "\n\n(2)-Fazer uma fogueira e passar a noite ao ar livre.\n"))
 
     if cabana == 1:
         print(nome," decidiu então por passar a noite na cabana, mas precisaria visitar"
@@ -331,14 +331,15 @@ if caminho == 1:
         if vitoria == 1:
             print("\n\nHavia um esqueleto dentro da cabana!"
                   "\nEle te atacou de surpresa, mas seu tempo"
-                  " de treino fez valer e você conseguiu derrota-lo!"
+                  " de treino fez valer e você conseguiu derrotá-lo!"
                   "\n\n",nome," olhou em volta e percebeu uma velha bolsa"
                   " de couro, largada próximo a uma mesa."
                   "\nAo chegar perto, notara que havia uma carta, e então"
-                  " decidiu lê-la.\n\nA carta dizia.....:"
+                  " decidiu lê-la.\n\nA carta dizia....."
+                  "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
                   "\n\nEspero que alguém leia essa carta..."
                   "\n\nMeu nome é Grace, a Arcana Branca. Ou pelo menos era antes de toda essa bagunça."
-                  "Quando aquela Bruxa das Trevas retornou, pensávamos que não sofríamos tanto perigo,"
+                  "\nQuando aquela Bruxa das Trevas retornou, pensávamos que não sofríamos tanto perigo,"
                   "\n mas ela conseguiu encontrar um livro de feitiços, que foi escrito pelo primeiro"
                   "\n Necromante que pisou nessas terras e acabara de lançar sua maldição. O desespero foi geral,"
                   "\n muitos ficaram paralisados esperando seu infeliz destino, outros se uniram e fugiram rapidamente."
@@ -356,7 +357,8 @@ if caminho == 1:
                   "\n então segurei a filha mais nova da família em meus braços e evaporei dali."
                   "\n Quando pisquei já estava fora do reino e fora do alcance da maldição. Em meus braços, estava o esqueleto da menininha."
                   "\n Fazemos o que fazemos para sobreviver, eu fiz a minha escolha, eles fizeram a deles."
-                  "\n Não sou mais digna de meu título, eu mudei a partir daquele dia, meu nome agora é Grace, a Arcana das Trevas.\n\n")
+                  "\n Não sou mais digna de meu título, eu mudei a partir daquele dia, meu nome agora é Grace, a Arcana das Trevas.\n\n"
+                  "\n-----------------------------------------------------------------------------------------------------------------------------------------------")
 
 
         else:
@@ -376,7 +378,8 @@ elif caminho == 2:
               "Ao vasculhar alguns velhos sacos largados por ali em busca de algo para comer",
               nome," encontrou um velho pedaço de papel, gasto e sujo, parecia uma carta."
               "\nComeçou a lê-la, e nela dizia...\n\n"
-              "Caro leitor, Meu nome é Agar, o Ladino e tenho uma história para contar,"
+              "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
+              "\n Caro leitor, meu nome é Agar, o Ladino e tenho uma história para contar,"
               "\n a história de como fugi de Gammelt Rike. Era um dia normal no nosso reino,"
               "\n crianças brincavam nas ruas, mercenários gastavam seus ouros nas tavernas,"
               "\n cavaleiros asseguravam a segurança de todos. Até que recebi um contrato real"
@@ -396,9 +399,10 @@ elif caminho == 2:
               "\n não tive nenhuma dúvida, montei em meu cavalo e fugi do castelo. Tentei ajudar o máximo de pessoas que pude,"
               "\n infelizmente não possuo poderes divinos, logo o que pude fazer foi encher uma carruagem com mulheres e crianças e seguir além das montanhas."
               "\n Foi a primeira vez que me senti realmente útil, pois minhas ações e habilidades sempre foram associadas com trapaceiros,"
-              "\n e ladrões, mas nesse dia me senti como se fosse Agar, o Herói.")
+              "\n e ladrões, mas nesse dia me senti como se fosse Agar, o Herói."
+              "\n-----------------------------------------------------------------------------------------------------------------------------------------------")
     
-print("\n\n\nEnfim, passado alguns dias",nome," já conseguia ver a grande floresta Mork."
+print("\n\n\nEnfim, passado alguns dias",nome," já conseguia ver a grande Floresta Mork."
       "\nTodos a temiam, estava claro o por quê."
       "\nÁrvores altas como gigantes e sombras negras que espantavam qualquer viajante"
       "\nAquele não era um lugar para ficar de passagem.\n",nome," precisava logo"
@@ -412,13 +416,13 @@ print("\n\n################## ESCOLHA ##################\n\n")
 caminho2 = int(input("\n\n(1) A Leste, o caminho levava para Dodsgrotte, uma antiga gruta"
                      " dita ser abandonada, mas que era lar da poderosa Bruxa em tempos antigos."
                      "\n(2) A Oeste, Landsbyen, uma vila de elfos, que outrora exalava sabedoria"
-                     " antiga."))
+                     " antiga.\n"))
 
 
 
 ####COMEÇO CAMINHO 1 LESTE
 if caminho2 == 1:
-    print("\n\nO espirito de aventura queimava forte em ",nome,".\n"
+    print("\n\nO espírito de aventura queimava forte em ",nome,".\n"
           "Decidiu então partir para Dodsgrotte. Quem sabe quais mistérios"
           " ainda podiam ser revelados no lar da Bruxa."
           "\n\nAlguns dias de viagem separavam ",nome," de seu destino, era melhor se apressar,"
@@ -430,10 +434,10 @@ if caminho2 == 1:
 
     print("\n\n################## ESCOLHA ##################\n\n")
 
-    gruta = int(input("(1) Entrar na Gruta e tentar encontrar algum documento que"
+    gruta = int(input("(1) -Entrar na Gruta e tentar encontrar algum documento que"
                       " contesse alguma informação útil."
-                      "\n(2) É mais sabido preservar a vida e continuar sua história,"
-                      "\nProvavelmente a opção mais segura seria ignorar a Gruta e seguir para o Reino"))
+                      "\n(2) -É mais sabido preservar a vida e continuar sua história,"
+                      "\nprovavelmente a opção mais segura seria ignorar a Gruta e seguir para o Reino/n"))
     if gruta == 1:
         print(nome," estava mesmo determinado em descobrir mais sobre os mistérios da maldição."
               "\nNa Gruta então, ele adentrou.\nSua respiração não conseguia esconder seu medo,"
@@ -441,9 +445,9 @@ if caminho2 == 1:
               "Barulhos estranhos podiam ser ouvidos ao fundo, logo sua respiração já"
               " estava mais pesada.\n"
               "Uma silhueta já podia ser vista, às sombras de uma fogueira crepitante."
-              "\nQuanto mais próximo chegava",nome," podia ver com mais clareza a criatura que guardava"
-              " a caverna da Bruxa."
-              "\nEra horrível, o corpo já estava morto há muito tempo",nome," não conseguia"
+              "\nQuanto mais próximo chegava,",nome," podia ver com mais clareza a criatura que guardava"
+              " na caverna da Bruxa."
+              "\nEra horrível, o corpo já estava morto por fora há muito tempo",nome,", não conseguia"
               " entender como ainda estava de pé."
               "\nO monstro estava próximo ao fogo, e um armário podia ser visto ao fundo."
               "\nAlgo ali prendeu a atenção de ",nome,".\nHavia o que parecia ser velhos pergaminhos"
@@ -453,16 +457,17 @@ if caminho2 == 1:
         print("\n\n################## ESCOLHA ##################\n\n")
 
 
-        stealth = int(input("\n\n(1) Tentar passar sorrateiramente e roubar os documentos."
-                                "\n(2) Voltar a entrada e seguir o caminho."))
+        stealth = int(input("\n\n(1) -Tentar passar sorrateiramente e roubar os documentos."
+                                "\n(2) -Voltar a entrada e seguir o caminho.\n"))
         if stealth == 1:
         
             chance = randint(0,3)
 
             if chance == 0 or chance == 1:
                 ##########################INSERIR O LIVRO
-                print("\nVocê conseguiu se esgueirar, apanhou uma bolsa com alguns livros e documentos"
-                      " e correu para um lugar seguro.")
+                print("\nVocê conseguiu se esgueirar, apanhou uma bolsa com alguns pergaminhos"
+                      " e correu para um lugar seguro. "
+                      "\nQuando sentiu que estava em um local, "#####terminar)
 
             elif chance == 2 or chance == 3:
                 print("\nO inimigo te notou, prepare-se!")
@@ -526,13 +531,13 @@ if caminho2 == 1:
 ####COMEÇO CAMINHO 2 OESTE
         
 else:
-    print("\nO espirito de curiosidade queimava forte em",nome,".\n"
+    print("\nO espírito de curiosidade queimava forte em",nome,".\n"
           "\nDecidiu então partir para Landsbyen, a antiga Vila de Elfos."
           "\nQuem sabe quais segredos mais podiam ser revelados\n quando"
           " compartilhada a sabedoria dos elfos antigos?")
 print("\n",nome," já perdera a conta de quantas horas estava andando"
       " e a vila não parecia estar ficando mais perto."
-      "\nFinalmente então,",nome," consegue ver distante algum cinal de civilização."
+      "\nFinalmente então,",nome," consegue ver distante algum sinal de civilização."
       "\nApertando o passo, logo se via de frente para a Vila dos elfos."
       "\nEstranhou o silêncio mortal, mas não estava surpreso."
       "\nNão havia um sinal de vida na vila.."
@@ -541,14 +546,14 @@ print("\n",nome," já perdera a conta de quantas horas estava andando"
 
 print("\n\n################## ESCOLHA ##################\n\n")
 
-vila = int(input("(1) Se abrigar em uma das casas e procurar informações."
-                 "\n(2) Recolher materiais para preparar uma fogueira."))
+vila = int(input("(1) -Se abrigar em uma das casas e procurar informações."
+                 "\n(2) -Recolher materiais para preparar uma fogueira.\n"))
 
 if vila == 1:
     print("\nA escolha estava clara e ",nome," sabia o que procurar."
           "\nQualquer informação sobre a maldição iria ajudar em sua jornada."
-          "\n\nUma das contruções lhe chamou a atenção, mais centralizada"
-          " uma cabana grande de dois andares, parecia ser uma das"
+          "\n\nUma das contruções lhe chamou a atenção,"
+          "\numa cabana grande de dois andares, parecia ser uma das"
           " únicas construções que sobreviveu à catastrofes e o tempo,"
           "\num bom lugar para procurar.")####################INSERIR LIVRO
 else:
