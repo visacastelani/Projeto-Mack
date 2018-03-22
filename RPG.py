@@ -437,7 +437,7 @@ if caminho2 == 1:
     gruta = int(input("(1) -Entrar na Gruta e tentar encontrar algum documento que"
                       " contesse alguma informação útil."
                       "\n(2) -É mais sabido preservar a vida e continuar sua história,"
-                      "\nprovavelmente a opção mais segura seria ignorar a Gruta e seguir para o Reino/n"))
+                      "\nprovavelmente a opção mais segura seria ignorar a Gruta e seguir para o Reino\n"))
     if gruta == 1:
         print(nome," estava mesmo determinado em descobrir mais sobre os mistérios da maldição."
               "\nNa Gruta então, ele adentrou.\nSua respiração não conseguia esconder seu medo,"
@@ -467,8 +467,19 @@ if caminho2 == 1:
                 ##########################INSERIR O LIVRO
                 print("\nVocê conseguiu se esgueirar, apanhou uma bolsa com alguns pergaminhos"
                       " e correu para um lugar seguro. "
-                      "\nQuando sentiu que estava em um local, "#####terminar)
-
+                      "\nQuando sentiu que estava em um local,"
+                      "\ntirou um pergaminho da bolsa, nele estava escrito:"
+                      "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
+                      "\nHoje completa um mês desde que a maldição chegou à Grammelt Rike."
+                      "\nEu vi minha amada e meu bebê serem transformados em monstros."
+                      "\nNão me transformei, pois, uso um colar à prova de maldições, foi um presente de um feiticeiro."
+                      "\nEla e meu bebê tentaram me matar."
+                      "\nNão tive alternativa, a não ser acabar com o sofrimento deles, mas a culpa está me consumindo por dentro."
+                      "\nDo que adianta não ter me transformado em um monstro fisicamente, mas mentalmente ter me transformado no pior monstro que já existiu?"
+                      "\nDeixo esse recado para qualquer alma que ainda lembra como se lê."
+                      "\nMeu nome é Azaghal, e estou prestes a rever meus amados..."    
+                      "\n-----------------------------------------------------------------------------------------------------------------------------------------------")
+                
             elif chance == 2 or chance == 3:
                 print("\nO inimigo te notou, prepare-se!")
                 while hp >0 or enemyHP >0:
@@ -503,15 +514,25 @@ if caminho2 == 1:
 
                         
 
-                        if enemyHP == 0 or enemyHP < 0:
+                        elif enemyHP == 0 or enemyHP < 0:
                             print("\n\n\n\nVocê derrotou o inimigo!"
                                   "\n\nA criatura medonha solta um grito antes de cair"
                                   " no chão, parecia ter sido morta uma segunda vez"
-                                  "\nPodendo agora olhar com mais calma",nome," olhou pela estante de livros"
-                                  ", pegando alguns que chamaram a sua atenção.")
-                            ##############################################INSERIR LIVRO AQUI
+                                  "\nPodendo agora olhar com mais calma",nome," olhou pelo local até encontrar uma bolsa cheia de pergaminhos,"
+                                  "\npegou então um pergaminho da bolsa, nele estava escrito:"
+                                  "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
+                                  "\nHoje completa um mês desde que a maldição chegou à Grammelt Rike."
+                                  "\nEu vi minha amada e meu bebê serem transformados em monstros."
+                                  "\nNão me transformei, pois, uso um colar à prova de maldições, foi um presente de um feiticeiro."
+                                  "\nEla e meu bebê tentaram me matar."
+                                  "\nNão tive alternativa, a não ser acabar com o sofrimento deles, mas a culpa está me consumindo por dentro."
+                                  "\nDo que adianta não ter me transformado em um monstro fisicamente, mas mentalmente ter me transformado no pior monstro que já existiu?"
+                                  "\nDeixo esse recado para qualquer alma que ainda lembra como se lê."
+                                  "\nMeu nome é Azaghal, e estou prestes a rever meus amados..."    
+                                  "\n-----------------------------------------------------------------------------------------------------------------------------------------------")
+                            
                             break
-        else:
+            else:
             print("\nEnfrentar o monstro e acabar morto por um pedaço"
                       " de papel era um risco real.",
                       nome," decidiu então, voltar à entrada.")
@@ -555,8 +576,23 @@ if vila == 1:
           "\n\nUma das contruções lhe chamou a atenção,"
           "\numa cabana grande de dois andares, parecia ser uma das"
           " únicas construções que sobreviveu à catastrofes e o tempo,"
-          "\num bom lugar para procurar.")####################INSERIR LIVRO
-else:
+          "\num bom lugar para procurar um livro que antecedia a maldição."
+          "\nFelizmente a busca teve resultado:"
+          "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
+          "\nEssa é a história de Izzy, a Caçadora de Demônios"
+          "\nNasceu entre os elfos feiticeiros da floresta, que dividia Gammelt Rike e as montanhas."
+          "\nQuando era apenas uma criança, viu seus pais serem mortos por demônios que habitavam as cavernas das montanhas."
+          "\nIsso foi um marco em sua vida, após desse evento, ela jurou caçar cada um até que fossem extintos."
+          "\nE foi o que ela fez, durante a Era de Ouro do reino, aceitava contratos e caçava as criaturas da noite."
+          "\nAté que muitos boatos de magia negra foram relatados por todo reino."
+          "\nNuma noite, ela seguiu vultos até a entrada de uma caverna distante dos arredores do reino de Gammelt Rike,"
+          "\nentão conseguiu ver que existia um exército de necromantes liderado por uma Bruxa das Trevas."
+          "\nQuando alertou a realeza, o Rei Eldarion proclamou um concelho,"
+          "\nque incluía os conselheiros reais e os campeões Axxi’s, o Paladino Negro; David, o Bárbaro e Izzy, a Caçadora de Demônios."
+          "\nComo todos já sabem, o Reino de Gammelt Rike saiu vitorioso dessa guerra, mas Izzy não."
+          "\nEla e os outros dois líderes dessa batalha haviam sido mortos em batalha."
+          "\n-----------------------------------------------------------------------------------------------------------------------------------------------")  
+    else:
     print("Exausto da viagem,",nome," decide fazer uma fogueira. Se aquecer e alimentar"
           " a essa hora se tornara também uma questão de sobrevivência."
           "\nUnindo isso a uma boa noite de sono, o dia seguinte seria produtivo,"
