@@ -11,8 +11,8 @@ while comecar != "START":
     print("\n\nPor favor, digite '5START'")
     comecar = str(input('\n\nDigite "START" para começar o jogo '))
     comecar = comecar.upper()
-    if comecar == "START":
-        print("\n\nVocê está prestes a vivenciar uma experiência única!"
+if comecar == "START":
+    print("\n\nVocê está prestes a vivenciar uma experiência única!"
                 "\n\nMas antes, um pequeno tutorial:"
                 "\nO <jogo> é narrado, e opções de diálogo são dadas ao protagonista."
                 " Para escolhe-las, digite apenas o número que"
@@ -35,7 +35,7 @@ classe = int(input("\nBem vindo ao menu de seleção de classes."
                    "\n(2) -Guerreiro: Os Guerreiros de Lepercia"
                    "\n(3) -Arqueiro: Os Discípulos de Vicasa  \n"))
 
-    
+   
 ##########################################
 
 #MAGO
@@ -514,7 +514,7 @@ if caminho2 == 1:
 
                         
 
-                        elif enemyHP == 0 or enemyHP < 0:
+                        if enemyHP == 0 or enemyHP < 0:
                             print("\n\n\n\nVocê derrotou o inimigo!"
                                   "\n\nA criatura medonha solta um grito antes de cair"
                                   " no chão, parecia ter sido morta uma segunda vez"
@@ -530,10 +530,10 @@ if caminho2 == 1:
                                   "\nDeixo esse recado para qualquer alma que ainda lembra como se lê."
                                   "\nMeu nome é Azaghal, e estou prestes a rever meus amados..."    
                                   "\n-----------------------------------------------------------------------------------------------------------------------------------------------")
-                            
-                            break
+                                 ##############RESUMIR A VIAGEM ( USAR TERMOS GENÉRICOS, QUE SIRVAM PARA OS DOIS CAMINHOS ##################
+                        break
             else:
-            print("\nEnfrentar o monstro e acabar morto por um pedaço"
+                print("\nEnfrentar o monstro e acabar morto por um pedaço"
                       " de papel era um risco real.",
                       nome," decidiu então, voltar à entrada.")
                         
@@ -551,54 +551,56 @@ if caminho2 == 1:
 
 ####COMEÇO CAMINHO 2 OESTE
         
-else:
-    print("\nO espírito de curiosidade queimava forte em",nome,".\n"
-          "\nDecidiu então partir para Landsbyen, a antiga Vila de Elfos."
-          "\nQuem sabe quais segredos mais podiam ser revelados\n quando"
-          " compartilhada a sabedoria dos elfos antigos?")
-print("\n",nome," já perdera a conta de quantas horas estava andando"
-      " e a vila não parecia estar ficando mais perto."
-      "\nFinalmente então,",nome," consegue ver distante algum sinal de civilização."
-      "\nApertando o passo, logo se via de frente para a Vila dos elfos."
-      "\nEstranhou o silêncio mortal, mas não estava surpreso."
-      "\nNão havia um sinal de vida na vila.."
-      "\nA noite já estava chegando, não havia muito tempo para nada, então",nome," tinha logo"
-      " que se decidir: ")
+    if caminho2 == 2:
+        print("\nO espírito de curiosidade queimava forte em",nome,".\n"
+              "\nDecidiu então partir para Landsbyen, a antiga Vila de Elfos."
+              "\nQuem sabe quais segredos mais podiam ser revelados\n quando"
+              " compartilhada a sabedoria dos elfos antigos?")
+        print("\n",nome," já perdera a conta de quantas horas estava andando"
+          " e a vila não parecia estar ficando mais perto."
+          "\nFinalmente então,",nome," consegue ver distante algum sinal de civilização."
+          "\nApertando o passo, logo se via de frente para a Vila dos elfos."
+          "\nEstranhou o silêncio mortal, mas não estava surpreso."
+          "\nNão havia um sinal de vida na vila.."
+          "\nA noite já estava chegando, não havia muito tempo para nada, então",nome," tinha logo"
+          " que se decidir: ")
 
-print("\n\n################## ESCOLHA ##################\n\n")
+        print("\n\n################## ESCOLHA ##################\n\n")
 
-vila = int(input("(1) -Se abrigar em uma das casas e procurar informações."
-                 "\n(2) -Recolher materiais para preparar uma fogueira.\n"))
+        vila = int(input("(1) -Se abrigar em uma das casas e procurar informações."
+                     "\n(2) -Recolher materiais para preparar uma fogueira.\n"))
 
-if vila == 1:
-    print("\nA escolha estava clara e ",nome," sabia o que procurar."
-          "\nQualquer informação sobre a maldição iria ajudar em sua jornada."
-          "\n\nUma das contruções lhe chamou a atenção,"
-          "\numa cabana grande de dois andares, parecia ser uma das"
-          " únicas construções que sobreviveu à catastrofes e o tempo,"
-          "\num bom lugar para procurar um livro que antecedia a maldição."
-          "\nFelizmente a busca teve resultado:"
-          "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
-          "\nEssa é a história de Izzy, a Caçadora de Demônios"
-          "\nNasceu entre os elfos feiticeiros da floresta, que dividia Gammelt Rike e as montanhas."
-          "\nQuando era apenas uma criança, viu seus pais serem mortos por demônios que habitavam as cavernas das montanhas."
-          "\nIsso foi um marco em sua vida, após desse evento, ela jurou caçar cada um até que fossem extintos."
-          "\nE foi o que ela fez, durante a Era de Ouro do reino, aceitava contratos e caçava as criaturas da noite."
-          "\nAté que muitos boatos de magia negra foram relatados por todo reino."
-          "\nNuma noite, ela seguiu vultos até a entrada de uma caverna distante dos arredores do reino de Gammelt Rike,"
-          "\nentão conseguiu ver que existia um exército de necromantes liderado por uma Bruxa das Trevas."
-          "\nQuando alertou a realeza, o Rei Eldarion proclamou um concelho,"
-          "\nque incluía os conselheiros reais e os campeões Axxi’s, o Paladino Negro; David, o Bárbaro e Izzy, a Caçadora de Demônios."
-          "\nComo todos já sabem, o Reino de Gammelt Rike saiu vitorioso dessa guerra, mas Izzy não."
-          "\nEla e os outros dois líderes dessa batalha haviam sido mortos em batalha."
-          "\n-----------------------------------------------------------------------------------------------------------------------------------------------")  
-    else:
-    print("Exausto da viagem,",nome," decide fazer uma fogueira. Se aquecer e alimentar"
-          " a essa hora se tornara também uma questão de sobrevivência."
-          "\nUnindo isso a uma boa noite de sono, o dia seguinte seria produtivo,"
-          "\npouco agora restava do caminho até o Reino.")
+        if vila == 1:
+            print("\nA escolha estava clara e ",nome," sabia o que procurar."
+                  "\nQualquer informação sobre a maldição iria ajudar em sua jornada."
+                  "\n\nUma das contruções lhe chamou a atenção,"
+                  "\numa cabana grande de dois andares, parecia ser uma das"
+                  " únicas construções que sobreviveu à catastrofes e o tempo,"
+                  "\num bom lugar para procurar um livro que antecedia a maldição."
+                  "\nFelizmente a busca teve resultado:"
+                  "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
+                  "\nEssa é a história de Izzy, a Caçadora de Demônios"
+                  "\nNasceu entre os elfos feiticeiros da floresta, que dividia Gammelt Rike e as montanhas."
+                  "\nQuando era apenas uma criança, viu seus pais serem mortos por demônios que habitavam as cavernas das montanhas."
+                  "\nIsso foi um marco em sua vida, após desse evento, ela jurou caçar cada um até que fossem extintos."
+                  "\nE foi o que ela fez, durante a Era de Ouro do reino, aceitava contratos e caçava as criaturas da noite."
+                  "\nAté que muitos boatos de magia negra foram relatados por todo reino."
+                  "\nNuma noite, ela seguiu vultos até a entrada de uma caverna distante dos arredores do reino de Gammelt Rike,"
+                  "\nentão conseguiu ver que existia um exército de necromantes liderado por uma Bruxa das Trevas."
+                  "\nQuando alertou a realeza, o Rei Eldarion proclamou um concelho,"
+                  "\nque incluía os conselheiros reais e os campeões Axxi’s, o Paladino Negro; David, o Bárbaro e Izzy, a Caçadora de Demônios."
+                  "\nComo todos já sabem, o Reino de Gammelt Rike saiu vitorioso dessa guerra, mas Izzy não."
+                  "\nEla e os outros dois líderes dessa batalha haviam sido mortos em batalha."
+                  "\n-----------------------------------------------------------------------------------------------------------------------------------------------")  
+        else:
+            print("Exausto da viagem,",nome," decide fazer uma fogueira. Se aquecer e alimentar"
+                  " a essa hora se tornara também uma questão de sobrevivência."
+                  "\nUnindo isso a uma boa noite de sono, o dia seguinte seria produtivo,"
+                  "\npouco agora restava do caminho até o Reino.")
 
 ####FIM CAMINHO 2
+
+print("\n\nEm seu mapa agora,",nome," via que apenas alguns poucos dias de viagem o impediam de chegar ao Reino.")
 
 input()
     
