@@ -464,7 +464,6 @@ if caminho2 == 1:
             chance = randint(0,3)
 
             if chance == 0 or chance == 1:
-                ##########################INSERIR O LIVRO
                 print("\nVocê conseguiu se esgueirar, apanhou uma bolsa com alguns pergaminhos"
                       " e correu para um lugar seguro. "
                       "\nQuando sentiu que estava em um local,"
@@ -611,15 +610,13 @@ print("\n\nEm seu mapa agora,",nome," via que apenas alguns poucos dias de viage
       "\nAli se encontraria seu destino, e ",nome," estava pronto para decidi-lo.")
 
 ####################### CASTELO
-print("\nChegando ao castelo,",nome," lembrara dos caminhos que tomava quando era criança.")
+print("\nChegando ao castelo,",nome," lembrara dos caminhos que", mentor, "lhe dissera.")
 
 print("\n\n################## ESCOLHA ##################\n\n")
 castelo = int(input("\n(1) Podia ir pela muralha, subindo as escadarias, passando pela biblioteca"
                     "\n e chegando a sala do trono."
-                    "\n(2) Um caminho que fizera poucas vezes, pelas masmorras do castelo."
-                    "\nPassaria pelas celas e por uma misteriosa sala com uma grande porta de ferro,"
-                    "\n esta que lhe dava medo, como recorda."))
-
+                    "\n(2) Poderia fazer um caminho que passaria pelas masmorras do castelo."
+                    "\nPassaria por cantos inóspitos, possivelmete com alguma passagem secreta, ou algum lugar misterioso\n"))
 
 ####################### BIBLIOTECA
 if castelo == 1:
@@ -632,7 +629,6 @@ if castelo == 1:
           "\nChegara então à biblioteca, se assemelhava pouco ao que costumava ser, mas alguns"
           "\ndos pergaminhos ainda pareciam intactos."
           "\nDuas coisas então lhe chamaram a atenção: ")
-
     print("\n\n################## ESCOLHA ##################\n\n")          
 
     biblioteca = int(input("\n(1) A seção de livros de Magia Antiga estava completamente revirada."
@@ -683,24 +679,6 @@ print("\nApós um longo caminho enfim, se via em frente as portas da sala do tro
       "\nTomou fôlego então e as empurrou, entrando ao salão principal."
       "\nUma figura sinistra sentava no trono. Ainda possuía características humanas, mas não se parecia tanto com um."
       "\n",nome," então exclamou: "
-      "\n- Diga, ser amaldiçoado, é você o responsável pelo que acontecera com o Reino!?"
-
-    
-
-
-
-
-
+      "\n- Diga, ser amaldiçoado, é você o responsável pelo que acontecera com o Reino!?")
 
 input()
-    
-
-
-
-
-
-
-
-
-
-
