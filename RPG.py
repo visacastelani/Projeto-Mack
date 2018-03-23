@@ -551,12 +551,12 @@ if caminho2 == 1:
 
 ####COMEÇO CAMINHO 2 OESTE
         
-    if caminho2 == 2:
-        print("\nO espírito de curiosidade queimava forte em",nome,".\n"
+if caminho2 == 2:
+    print("\nO espírito de curiosidade queimava forte em",nome,".\n"
               "\nDecidiu então partir para Landsbyen, a antiga Vila de Elfos."
               "\nQuem sabe quais segredos mais podiam ser revelados\n quando"
               " compartilhada a sabedoria dos elfos antigos?")
-        print("\n",nome," já perdera a conta de quantas horas estava andando"
+    print("\n",nome," já perdera a conta de quantas horas estava andando"
           " e a vila não parecia estar ficando mais perto."
           "\nFinalmente então,",nome," consegue ver distante algum sinal de civilização."
           "\nApertando o passo, logo se via de frente para a Vila dos elfos."
@@ -565,12 +565,12 @@ if caminho2 == 1:
           "\nA noite já estava chegando, não havia muito tempo para nada, então",nome," tinha logo"
           " que se decidir: ")
 
-        print("\n\n################## ESCOLHA ##################\n\n")
+    print("\n\n################## ESCOLHA ##################\n\n")
 
-        vila = int(input("(1) -Se abrigar em uma das casas e procurar informações."
+    vila = int(input("(1) -Se abrigar em uma das casas e procurar informações."
                      "\n(2) -Recolher materiais para preparar uma fogueira.\n"))
 
-        if vila == 1:
+    if vila == 1:
             print("\nA escolha estava clara e ",nome," sabia o que procurar."
                   "\nQualquer informação sobre a maldição iria ajudar em sua jornada."
                   "\n\nUma das contruções lhe chamou a atenção,"
@@ -592,15 +592,105 @@ if caminho2 == 1:
                   "\nComo todos já sabem, o Reino de Gammelt Rike saiu vitorioso dessa guerra, mas Izzy não."
                   "\nEla e os outros dois líderes dessa batalha haviam sido mortos em batalha."
                   "\n-----------------------------------------------------------------------------------------------------------------------------------------------")  
-        else:
-            print("Exausto da viagem,",nome," decide fazer uma fogueira. Se aquecer e alimentar"
+    else:
+        print("Exausto da viagem,",nome," decide fazer uma fogueira. Se aquecer e alimentar"
                   " a essa hora se tornara também uma questão de sobrevivência."
                   "\nUnindo isso a uma boa noite de sono, o dia seguinte seria produtivo,"
                   "\npouco agora restava do caminho até o Reino.")
 
 ####FIM CAMINHO 2
 
-print("\n\nEm seu mapa agora,",nome," via que apenas alguns poucos dias de viagem o impediam de chegar ao Reino.")
+print("\n\nEm seu mapa agora,",nome," via que apenas alguns poucos dias de viagem o impediam de chegar ao Reino."
+      "\nPensava se durante a sua viagem tinha aprendido o bastante para enfrenter o que quer que seja"
+      "\n o mal que estivesse assolando essas terras."
+      "\nMas uma coisa",nome," sabia. Teria que fazer escolhas."
+      "\n\nDois dias depois..."
+      "\n",nome," jà conseguia ver is altos muros do castelo."
+      "\nO que outrora expressava sua força e grandeza,"
+      "\nsuas torres cobertas de fumaça mostram apenas a decadência do Reino."
+      "\nAli se encontraria seu destino, e ",nome," estava pronto para decidi-lo.")
+
+####################### CASTELO
+print("\nChegando ao castelo,",nome," lembrara dos caminhos que tomava quando era criança.")
+
+print("\n\n################## ESCOLHA ##################\n\n")
+castelo = int(input("\n(1) Podia ir pela muralha, subindo as escadarias, passando pela biblioteca"
+                    "\n e chegando a sala do trono."
+                    "\n(2) Um caminho que fizera poucas vezes, pelas masmorras do castelo."
+                    "\nPassaria pelas celas e por uma misteriosa sala com uma grande porta de ferro,"
+                    "\n esta que lhe dava medo, como recorda."))
+
+
+####################### BIBLIOTECA
+if castelo == 1:
+    print("\n\nO caminho pelas muralhas podia dar uma visão melhor do que se tornara o Reino."
+          "\nImaginava se a biblioteca ainda guardava um pouco da sua antiga majestia."
+          "\nTomou então o caminho pelas escadas e se apressou para a muralha."
+          "\n\nNo alto, viu o pátio principal, as estalagens e as forjas, tudo que"
+          "\nainda estava vivo em sua memória, agora estava destruído. Então pensou consigo mesmo: "
+          "\n\n- O que fez aquela Bruxa?"
+          "\nChegara então à biblioteca, se assemelhava pouco ao que costumava ser, mas alguns"
+          "\ndos pergaminhos ainda pareciam intactos."
+          "\nDuas coisas então lhe chamaram a atenção: ")
+
+    print("\n\n################## ESCOLHA ##################\n\n")          
+
+    biblioteca = int(input("\n(1) A seção de livros de Magia Antiga estava completamente revirada."
+                           "\nCom certeza, se alguem soubesse o que procurava, teria encontrado ali."
+                           "\n(2) Os antigos pergaminhos estavam espalhados pela mesa, notou ainda"
+                           "\nque algum tipo de documento tinha sido queimado ali."))
+    if biblioteca == 1:
+        print("")
+
+    ## ELSE biblioteca == 2
+    else:
+        print("")
+
+
+#### ELSE castelo == 2
+else:
+    print("\nExigiam espiritos corajosos, as masmorras. Suas lembranças deste lugar são um pouco escuras,"
+          "\nMas quem sabe o que encontraria naquela porta?"
+          "\nTomou então as escadas, e se dirigiu para as celas."
+          "\nGrilhões de ferro prendidos as paredes, um ambiente extremamente úmido e pouquíssima luz, a não ser a das torchas."
+          "\nQuem passara os dias ali, não teve uma boa estadia, pensou."
+          "\nQuanto mais fundo ia, mais sinistras as paredes pareciam. As sombras que criptavam"
+          "\ndas chamas da torcha pareciam dançar de maneira ofensiva, fazendo com que ",nome," apertasse ainda mais o passo."
+          "\nAté que então, chegou a uma sala com uma grande mesa de madeira no centro."
+          "\nSobre a mesa, estavam alguns livros e pergaminhos."
+          "\nAo fundo da sala, uma porta enorme de ferro, sem nenhum espaço para bisbilhotar por ela."
+          "\nSem dúvidas, aquela era a porta que recordava quando criança.")
+
+    print("\n\n################## ESCOLHA ##################\n\n")
+
+    masmorra = int(input("\n(1) Talvez alguns daqueles documentos pudessem ser úteis, poderia dar uma olhada."
+                         "\n(2) Com certeza algo estava guardado lá dentro, algo...ou alguém.."))
+
+    if masmorra == 1:
+        print("")
+
+
+
+    ##ELSE masmorra == 2:
+    else:
+        print("")
+
+
+
+
+print("\nApós um longo caminho enfim, se via em frente as portas da sala do trono."
+      "\n",nome," Não sabia o que esperava encontrar depois daquelas portas, mas chegara a hora de enfrentar."
+      "\nTomou fôlego então e as empurrou, entrando ao salão principal."
+      "\nUma figura sinistra sentava no trono. Ainda possuía características humanas, mas não se parecia tanto com um."
+      "\n",nome," então exclamou: "
+      "\n- Diga, ser amaldiçoado, é você o responsável pelo que acontecera com o Reino!?"
+
+    
+
+
+
+
+
 
 input()
     
