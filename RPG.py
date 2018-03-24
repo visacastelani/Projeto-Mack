@@ -499,12 +499,12 @@ if caminho2 == 1:
 
                     if  hp == 0 or hp < 0:
                         print("\n\n\n\nVocê lembra das histórias que contavam sobre os bosques."
-                              "\nInfelizmente,todas elas eram verdadeiras."
-                              "\nVocê esta morto!")
+                                  "\nInfelizmente,todas elas eram verdadeiras."
+                                  "\nVocê esta morto!")
                         quit()
-                      
-                    if enemyHP == 0 or enemyHP < 0:    
-                         print("\n\n\n\nVocê derrotou o inimigo!"
+                          
+                    elif enemyHP == 0 or enemyHP < 0:    
+                        print("\n\n\n\nVocê derrotou o inimigo!"
                                   "\n\nA criatura medonha solta um grito antes de cair"
                                   " no chão, parecia ter sido morta uma segunda vez"
                                   "\nPodendo agora olhar com mais calma",nome," olhou pelo local até encontrar uma bolsa cheia de pergaminhos,"
@@ -520,7 +520,7 @@ if caminho2 == 1:
                                   "\nMeu nome é Azaghal, e estou prestes a rever meus amados..."    
                                   "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
                                   "\nDepois de absorver as informações, retornou ao caminho da floresta.")
-                    break
+                        break
                                  
 
             
@@ -736,12 +736,13 @@ else:
 
                 if enemyHP == 0 or enemyHP < 0:
                     print("\n\nVocê derrotou o inimigo!"
+                          "\n\nDe certa forma, a criatura lhe parecia familiar."
                           "\nVocê não sabe o porque, mas se sente triste com isso")
                     break
              ######$LUTAR
 
 
-print("\nApós um longo caminho enfim, se via em frente as portas da sala do trono."
+print("\nApós um longo caminho enfim,",nome," se via em frente as portas da sala do trono."
       "\n",nome," Não sabia o que esperava encontrar depois daquelas portas, mas chegara a hora de enfrentar."
       "\nTomou fôlego e então as empurrou, entrando ao salão principal."
       "\nUma figura sinistra sentava no trono. Ainda possuía características humanas, mas não se parecia tanto com um."
