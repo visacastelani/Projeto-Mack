@@ -800,30 +800,55 @@ if final == 1:
             input("\n\nAperte 'ENTER' para ir para a"
                 " próxima rodada!")
             if  hp == 0 or hp < 0:
+                nota = "FINAL RUIM"
                 print("\n\nA batalha foi árdua, você lutou"
                         " bravamente, mas infelizmente"
                         " as forças das trevas venceram."
                         "\n\nVocê foi morto pelo seu pai!"
-                        "\nGrammelt Rike nunca se libertou da maldição...")
+                        "\nGrammelt Rike nunca se libertou da maldição..."
+                        "\n\nAs três Lendas de Gammelt Rike agradecem por ter jogado!"
+                          "\nAssinado:"
+                          "\nHenrique Macadura , o Mago      TIA:31811231"
+                          "\nLeonardo Depercia , o Guerreiro TIA:31832091"
+                          "\nVinícius Castelani, o Arqueiro  TIA:31860842"
+                          "\n\nOBRIGADO POR JOGAREM!!!"
+                          "\nVOCÊ ALCANÇOU O",nota)
                 quit()                                
             
             elif enemyHP == 0 or enemyHP < 0:
+                nota = "FINAL RUIM"
                 print("\n\nVocê derrotou o inimigo!"
                       "\nToda energia das trevas que estava acumulada no corpo do rei,"
                       "está agora em seu corpo."
                       "Você se torna rei de Gammelt Rike."
                       "\nUm rei sem súditos, sem realeza, sem família."
-                      "Um rei sem reino..."
-                      "Essa é a história de",nome,classe1,"das Trevas")
+                      "\nUm rei sem reino..."
+                      "\nEssa é a história de",nome,classe1,"das Trevas"
+                      "\n\nAs três Lendas de Gammelt Rike agradecem por ter jogado!"
+                      "\nAssinado:"
+                      "\nHenrique Macadura , o Mago      TIA:31811231"
+                      "\nLeonardo Depercia , o Guerreiro TIA:31832091"
+                      "\nVinícius Castelani, o Arqueiro  TIA:31860842"
+                      "\n\nOBRIGADO POR JOGAREM!!!"
+                      "\nVOCÊ ALCANÇOU O",nota)
                 quit()
 
 
 #if Se aliar antes de quebrar a maldição#
 elif final == 2:
+    nota = "FINAL RUIM"
     print("Você se aliou ao Rei Amon. Com o passar dos dias ele se lembrou de fragmanetos de sua vida.\n",
           nome,", gostou tanto da sensação de poder,"
           "\nque  assassionou o seu pai para ter o poder só para ele."
-          "Seu primeiro ato como rei foi caçar as Três Lendas, para seu reinado nunca acabar...")
+          "Seu primeiro ato como rei foi caçar as Três Lendas, para seu reinado nunca acabar..."
+           "\n\nAs três Lendas de Gammelt Rike agradecem por ter jogado!"
+            "\nAssinado:"
+            "\nHenrique Macadura , o Mago      TIA:31811231"
+            "\nLeonardo Depercia , o Guerreiro TIA:31832091"
+            "\nVinícius Castelani, o Arqueiro  TIA:31860842"
+            "\n\nOBRIGADO POR JOGAREM!!!"
+            "\nVOCÊ ALCANÇOU O",nota)
+    quit()
     
 
 #if se aliar  quebrando a maldição#
@@ -849,7 +874,8 @@ elif final== 3:
               "\n- Sim minha filha, estou aqui. Você me salvou, salvou a todos nós!")
 print("- Pai, onde está minha Mãe?"
       "\n- Sua mãe foi a primeira a adoecer, tinhamos prendido ela em uma porta de ferro, nas masmorras.")      
-if masmorra == 1:
+if castelo == 1:
+    nota = "FINAL BOM"
     print("\n- Meu rei?"
           "\n- Minha rainha! Como estou feliz em estarmos juntos novamente."
           "\n- Mãe?"
@@ -864,7 +890,25 @@ if masmorra == 1:
           "\nSeu reinado foi prospero, com o tempo surgiram novos campeões,"
           "\nnovas lendas e novas ameaças,"
           "\nmas isso já faz parte de outra história...")
+elif masmorra == 1:
+    nota = "FINAL BOM"
+    print("\n- Meu rei?"
+          "\n- Minha rainha! Como estou feliz em estarmos juntos novamente."
+          "\n- Mãe?"
+          "\n- Pelos deuses! Como você cresceu, você que quebrou a maldição?"
+          "\n- Sim, mãe fui eu..."
+          "\n- Estou tão orgulhosa de você, ou melhor dizendo, nós estamos!"
+          "\n- Agradeço, aos dois. Mas acho que esta coroa pertence ao senhor."
+          "\n- Não, pelo menos não mais."
+          "\n- Como assim? Você governará Gammelt Rike a partir de hoje."
+          "\n- Se os senhores acharem que é minha hora, então governarei."
+          "\n\nCom o passar dos anos,",nome,classe1,"reconstruiu o Reino de Gammelt Rike, com a ajuda de seus habitantes."
+          "\nSeu reinado foi prospero, com o tempo surgiram novos campeões,"
+          "\nnovas lendas e novas ameaças,"
+          "\nmas isso já faz parte de outra história...")
+
 elif masmorra == 2:
+    nota = "FINAL RUIM"
     print("\n- Pai, não sei como dizer isso."
           "\n- O que lhe aflinges?"
           "\n- Eu matei minha mãe..."
@@ -880,10 +924,13 @@ elif masmorra == 2:
           "\nSeu reinado foi prospero, com o tempo surgiram novos campeões,"
           "\nnovas lendas e novas ameaças,"
           "\nmas isso já faz parte de outra história...")
+    
 
 print("As três Lendas de Gammelt Rike agradecem por ter jogado!"
       "\nAssinado:"
       "\nHenrique Macadura , o Mago      TIA:31811231"
       "\nLeonardo Depercia , o Guerreiro TIA:31832091"
-      "\nVinícius Castelani, o Arqueiro  TIA:31860842")
+      "\nVinícius Castelani, o Arqueiro  TIA:31860842"
+      "\n\nOBRIGADO POR JOGAREM!!!"
+      "\nVOCÊ ALCANÇOU O",nota)
 input()
