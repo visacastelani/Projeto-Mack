@@ -307,8 +307,9 @@ if caminho == 1:
                                       " bravamente, mas infelizmente"
                                       " as forças das trevas venceram."
                                       "\n\nVocê esta morto!")
-                        break
                         quit()
+                        break
+                        
                         
                         
                                    
@@ -326,46 +327,40 @@ if caminho == 1:
                         
 
                     if enemyHP == 0 or enemyHP < 0:
-                        print("\n\nVocê derrotou o inimigo!")
-                        vitoria = 1
+                        print("\n\nVocê derrotou o inimigo!"
+                              "\n\nHavia um esqueleto dentro da cabana!"
+                              "\nEle te atacou de surpresa, mas seu tempo"
+                              " de treino fez valer e você conseguiu derrotá-lo!"
+                              "\n\n",nome," olhou em volta e percebeu uma velha bolsa"
+                              " de couro, largada próximo a uma mesa."
+                              "\nAo chegar perto, notara que havia uma carta, e então"
+                              " decidiu lê-la.\n\nA carta dizia....."
+                              "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
+                              "\n\nEspero que alguém leia essa carta..."
+                              "\n\nMeu nome é Grace, a Arcana Branca. Ou pelo menos era antes de toda essa bagunça."
+                              "\nQuando aquela Bruxa das Trevas retornou, pensávamos que não sofríamos tanto perigo,"
+                              "\n mas ela conseguiu encontrar um livro de feitiços, que foi escrito pelo primeiro"
+                              "\n Necromante que pisou nessas terras e acabara de lançar sua maldição. O desespero foi geral,"
+                              "\n muitos ficaram paralisados esperando seu infeliz destino, outros se uniram e fugiram rapidamente."
+                              "\n Mas outros escaparam sem honra, assim como eu. Não me arrependo do que eu fiz, mas também não me orgulho."
+                              "\n Vou contar essa história, em memória da que morreu para que eu pudesse viver."
+                              "\n Fui sempre praticante de magia Branca, ajudava sempre a família de pescadores quando o dia de pesca não fora muito boa,"
+                              "\n em um piscar de olhos suas redes estavam cheias de peixes."
+                              "\n Eles eram amigos de meu irmão e quando ele estava viajando em suas cruzadas, eu os ajudava."
+                              "\n Mas então algo muito estranho aconteceu, era hora do almoço, quando uma mancha negra surgiu no céu."
+                              "\n Eu sabia que aquilo se tratara de uma maldição, chamei a família de pescadores para alertar o que estava acontecendo."
+                              "\n A nuvem se aproximava muito depressa e eles não acreditaram em mim. Estávamos distantes da fronteira do reino,"
+                              "\n foi então que tive uma ideia, não era boa, pois uma Arcana Branca nunca podia pensar em usar magia das Trevas,"
+                              "\n porém era questão de vida e morte. Existia um feitiço de teletransporte que podia usar para nos salvar,"
+                              "\n entretanto exigia um sacrifício. A família preferiu ficar e enfrentar seu destino, eu não tive essa coragem,"
+                              "\n então segurei a filha mais nova da família em meus braços e evaporei dali."
+                              "\n Quando pisquei já estava fora do reino e fora do alcance da maldição. Em meus braços, estava o esqueleto da menininha."
+                              "\n Fazemos o que fazemos para sobreviver, eu fiz a minha escolha, eles fizeram a deles."
+                              "\n Não sou mais digna de meu título, eu mudei a partir daquele dia, meu nome agora é Grace, a Arcana das Trevas.\n\n"
+                              "\n-----------------------------------------------------------------------------------------------------------------------------------------------")
                         break
 
-        if vitoria == 1:
-            print("\n\nHavia um esqueleto dentro da cabana!"
-                  "\nEle te atacou de surpresa, mas seu tempo"
-                  " de treino fez valer e você conseguiu derrotá-lo!"
-                  "\n\n",nome," olhou em volta e percebeu uma velha bolsa"
-                  " de couro, largada próximo a uma mesa."
-                  "\nAo chegar perto, notara que havia uma carta, e então"
-                  " decidiu lê-la.\n\nA carta dizia....."
-                  "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
-                  "\n\nEspero que alguém leia essa carta..."
-                  "\n\nMeu nome é Grace, a Arcana Branca. Ou pelo menos era antes de toda essa bagunça."
-                  "\nQuando aquela Bruxa das Trevas retornou, pensávamos que não sofríamos tanto perigo,"
-                  "\n mas ela conseguiu encontrar um livro de feitiços, que foi escrito pelo primeiro"
-                  "\n Necromante que pisou nessas terras e acabara de lançar sua maldição. O desespero foi geral,"
-                  "\n muitos ficaram paralisados esperando seu infeliz destino, outros se uniram e fugiram rapidamente."
-                  "\n Mas outros escaparam sem honra, assim como eu. Não me arrependo do que eu fiz, mas também não me orgulho."
-                  "\n Vou contar essa história, em memória da que morreu para que eu pudesse viver."
-                  "\n Fui sempre praticante de magia Branca, ajudava sempre a família de pescadores quando o dia de pesca não fora muito boa,"
-                  "\n em um piscar de olhos suas redes estavam cheias de peixes."
-                  "\n Eles eram amigos de meu irmão e quando ele estava viajando em suas cruzadas, eu os ajudava."
-                  "\n Mas então algo muito estranho aconteceu, era hora do almoço, quando uma mancha negra surgiu no céu."
-                  "\n Eu sabia que aquilo se tratara de uma maldição, chamei a família de pescadores para alertar o que estava acontecendo."
-                  "\n A nuvem se aproximava muito depressa e eles não acreditaram em mim. Estávamos distantes da fronteira do reino,"
-                  "\n foi então que tive uma ideia, não era boa, pois uma Arcana Branca nunca podia pensar em usar magia das Trevas,"
-                  "\n porém era questão de vida e morte. Existia um feitiço de teletransporte que podia usar para nos salvar,"
-                  "\n entretanto exigia um sacrifício. A família preferiu ficar e enfrentar seu destino, eu não tive essa coragem,"
-                  "\n então segurei a filha mais nova da família em meus braços e evaporei dali."
-                  "\n Quando pisquei já estava fora do reino e fora do alcance da maldição. Em meus braços, estava o esqueleto da menininha."
-                  "\n Fazemos o que fazemos para sobreviver, eu fiz a minha escolha, eles fizeram a deles."
-                  "\n Não sou mais digna de meu título, eu mudei a partir daquele dia, meu nome agora é Grace, a Arcana das Trevas.\n\n"
-                  "\n-----------------------------------------------------------------------------------------------------------------------------------------------")
-
-
-        else:
-            print("Não há futuro para alguém morto")
-                ###################arrumar Não está funcionando#########################
+        
     elif cabana == 2:
         print(nome," decide então acampar em uma clareira próxima."
           "\nEra melhor e mais seguro, e estava uma noite agradável..")
@@ -672,8 +667,8 @@ else:
     masmorra = int(input("\n(1) Talvez alguns daqueles documentos pudessem ser úteis, poderia dar uma olhada."
                          "\n(2) Com certeza algo estava guardado lá dentro, algo...ou alguém..\n"))
 
-if masmorra == 1:
-    print("Após procurar por alguns minutos,",nome,"encontrou um livro antigo"
+    if masmorra == 1:
+        print("Após procurar por alguns minutos,",nome,"encontrou um livro antigo"
               "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
               "\nEssa é a história de David, o Bárbaro" 
               "\nEm uma noite de inverno, o povo das montanhas crescia um pouco mais, pois nascerá o primogênito do fundador da Vila da Montanha."
@@ -692,8 +687,67 @@ if masmorra == 1:
         
 
 ##ELSE masmorra == 2:
-else:
-    print("")
+    else:
+        print("\n\nOptou por verificar a porta, pensou se foi uma escolha inteligente."
+              "\n-Provavelmente não.  Respondeu para sí mesmo."
+              "\nQuanto mais perto chegava, mais ameaçadora a porta parecia, murmúrios podiam ser"
+              "\nouvidos saindo de trás da porta, como lamentações."
+              "\nReuniu a coragem e destrancou a porta."
+              "\nA sala era escura...."
+              "\nNada dentro..."
+              "\nSilêncio mortal..."
+              "\nDe repente então, algo pula em direção à ",nome,"."
+              "\nUma criatura medonha, lembrava a silhueta do que fora uma mulher, um dia."
+              "\nGarras longas e afiadas."
+              "\n",nome," se prepara para o combate!")
+        #######LUTAR
+        hp = 10
+        enemyHP = 10
+
+        lutar = str(input("\n\nDigite 'LUTAR' para comaçar o duelo!"))
+        lutar = lutar.upper()
+
+        while lutar != "LUTAR":
+                lutar = str(input("\n\nDigite 'LUTAR' para começar o duelo!"))
+                lutar = lutar.upper()
+
+        if lutar == "LUTAR":
+            while hp > 0 or enemyHP > 0:
+                                
+                print("\nO inimigo irá atacar, defenda-se!")
+                #DANO RECEBIDO
+                dmg = randint(0,2)
+                hp = hp - dmg
+                print("\n####   DANO RECEBIDO: ",dmg,
+                "\n####   HP ATUAL:      " ,hp)
+                if  hp == 0 or hp < 0:
+                    print("\n\nVocê sente as garras frias perfurarem"
+                          " seu abdomem"
+                          "\nFoi uma longa jornada, e você chegara ao fim dela."
+                          "\nVocê está morto!")
+                    break                                                                                                           
+                print("\nSua vez de atacar!")
+                #DANO CAUSADO
+                dmg1 = randint(0,3)
+                enemyHP = enemyHP - dmg1
+                print("\n####   DANO CAUSADO: ", dmg1,
+                      "\n####   HP DO MONSTRO:", enemyHP)
+
+                input("\n\nAperte 'ENTER' para ir para a"
+                      " próxima rodada!")
+
+                                
+
+                if enemyHP == 0 or enemyHP < 0:
+                    print("\n\nVocê derrotou o inimigo!")
+                    break
+             ######$LUTAR
+
+
+
+
+
+        
 
 
 
