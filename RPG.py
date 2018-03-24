@@ -578,7 +578,8 @@ if caminho2 == 2:
                   "\nque incluía os conselheiros reais e os campeões Axxi’s, o Paladino Negro; David, o Bárbaro e Izzy, a Caçadora de Demônios."
                   "\nComo todos já sabem, o Reino de Gammelt Rike saiu vitorioso dessa guerra, mas Izzy não."
                   "\nEla e os outros dois líderes dessa batalha haviam sido mortos em batalha."
-                  "\n-----------------------------------------------------------------------------------------------------------------------------------------------")  
+                  "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
+                  "\nApós o nascer do sol, continuou seu caminho.")  
     else:
         print("Exausto da viagem,",nome," decide fazer uma fogueira. Se aquecer e alimentar"
                   " a essa hora se tornara também uma questão de sobrevivência."
@@ -734,16 +735,10 @@ else:
                                 
 
                 if enemyHP == 0 or enemyHP < 0:
-                    print("\n\nVocê derrotou o inimigo!")#####INSERIR HISTÓRIA DA MAE NESSE PRINT
+                    print("\n\nVocê derrotou o inimigo!"
+                          "\nVocê não sabe o porque, mas se sente triste com isso")
                     break
              ######$LUTAR
-
-
-
-
-
-        
-
 
 
 print("\nApós um longo caminho enfim, se via em frente as portas da sala do trono."
@@ -768,9 +763,11 @@ print("\nApós um longo caminho enfim, se via em frente as portas da sala do tro
 
 print("\n\n################## ESCOLHA ##################\n\n")
 ##################################FINALIZAR CONTEÚDO AQUI
-final = int(input("\n(1) Rei Amom não parece mais te reconhecer, devido a maldição, ele se tornou um inimigo como todos os outros. Prepare-se!"
-                  "\n(2)"
-                  "\n(3)"))
+final = int(input("\n(1) O Rei Amom não parece mais te reconhecer, devido a maldição, ele se tornou um inimigo como todos os outros. Prepare-se!"
+                  "\n(2) O Rei amaldiçoado, lembra de você e te oferece um lugar na Sala do Trono. Se aliar ao seu pai amaldiçoado."
+                  "\n(3) As Três Lendas te deram um colar que te protege do feitiço lançado pela Bruxa."
+                  "\nvocê decide dar o colar para seu pai e tentar quebrar o feitiço."
+                  "\n"))
 #if Matar#
 if final == 1:
     hp = 10
@@ -805,30 +802,87 @@ if final == 1:
                 print("\n\nA batalha foi árdua, você lutou"
                         " bravamente, mas infelizmente"
                         " as forças das trevas venceram."
-                        "\n\nVocê esta morto!")
+                        "\n\nVocê foi morto pelo seu pai!"
+                        "\nGrammelt Rike nunca se libertou da maldição...")
                 quit()                                
             
             elif enemyHP == 0 or enemyHP < 0:
-                print("\n\nVocê derrotou o inimigo!")
-        
-        
-#if Matar#
+                print("\n\nVocê derrotou o inimigo!"
+                      "\nToda energia das trevas que estava acumulada no corpo do rei,"
+                      "está agora em seu corpo."
+                      "Você se torna rei de Gammelt Rike."
+                      "\nUm rei sem súditos, sem realeza, sem família."
+                      "Um rei sem reino..."
+                      "Essa é a história de",nome,classe1,"das Trevas")
+                quit()
+
 
 #if Se aliar antes de quebrar a maldição#
 elif final == 2:
-    print("")
+    print("Você se aliou ao Rei Amon. Com o passar dos dias ele se lembrou de fragmanetos de sua vida.\n",
+          nome,", gostou tanto da sensação de poder,"
+          "\nque  assassionou o seu pai para ter o poder só para ele."
+          "Seu primeiro ato como rei foi caçar as Três Lendas, para seu reinado nunca acabar...")
+    
 
+#if se aliar  quebrando a maldição#
+elif final== 3:
+    print("Você conta ao rei sobre o colar."
+          "\nEle se recusa a usá-lo, enão você o atordoa."
+          "\nSem pensar duas vezes,",nome,"retira o colar, ficando exposto ao feitiço."
+          "\nQuando você coloca no Rei Amon, a aura negra sume de seu corpo."
+          "\nEle abriu os olhos e parecia livre.\n",
+          nome,", estava sentindo os efeitos da maldição, por algum motivo a transformação estava mais rápida."
+          "\nSeu pai absorve todas as informações e corre para te ajudar."
+          "\nVocê estava em paz em relação a sua escolha."
+          "\nEm um gesto de carinho e gratidão, o Rei reitira sua própria coroa e coloca em sua cabeça"
+          "\nNo momento em que",nome,",é coroado, um brilho mais forte que o sol emana da coroa, transformando todos em sua verdadeira forma,"
+          "\nEntão o Rei diz:")
+    if sexo == 1:
+        print('- "Quando o herdeiro retornar a maldição se esvaíra"'
+              "\n- Pai?"
+              "\n- Sim meu filho, estou aqui. Você me salvou, salvou a todos nós!")
+    elif sexo == 2:
+        print('- "Quando a herdeira retornar a maldição se esvaíra"'
+              "\n- Pai?"
+              "\n- Sim minha filha, estou aqui. Você me salvou, salvou a todos nós!")
+print("- Pai, onde está minha Mãe?"
+      "\n- Sua mãe foi a primeira a adoecer, tinhamos prendido ela em uma porta de ferro, nas masmorras.")      
+if masmorra == 1:
+    print("\n- Meu rei?"
+          "\n- Minha rainha! Como estou feliz em estarmos juntos novamente."
+          "\n- Mãe?"
+          "\n- Pelos deuses! Como você cresceu, você que quebrou a maldição?"
+          "\n- Sim, mãe fui eu..."
+          "\n- Estou tão orgulhosa de você, ou melhor dizendo, nós estamos!"
+          "\n- Agradeço, aos dois. Mas acho que esta coroa pertence ao senhor."
+          "\n- Não, pelo menos não mais."
+          "\n- Como assim? Você governará Gammelt Rike a partir de hoje."
+          "\n- Se os senhores acharem que é minha hora, então governarei."
+          "\n\nCom o passar dos anos,",nome,classe1,"reconstruiu o Reino de Gammelt Rike, com a ajuda de seus habitantes."
+          "\nSeu reinado foi prospero, com o tempo surgiram novos campeões,"
+          "\nnovas lendas e novas ameaças,"
+          "\nmas isso já faz parte de outra história...")
+elif masmorra == 2:
+    print("\n- Pai, não sei como dizer isso."
+          "\n- O que lhe aflinges?"
+          "\n- Eu matei minha mãe..."
+          "\n- ..."
+          "\n- Me perdoe."
+          "\n- ..."
+          "\n\nO Rei Amon não disse uma palavra."
+          "\nFicou em uma espécie de choque catatônico,"
+          "\nAté que derrepente ele tira a própria vida, para ficar com sua amada.\n",
+          nome,",também não aguentou todo este sofrimento, mas teve que ser forte,"
+          "\nnão por ele, mas pelo seu povo."
+          "\n\nCom o passar dos anos,",nome,classe1,"reconstruiu o Reino de Gammelt Rike, com a ajuda de seus habitantes."
+          "\nSeu reinado foi prospero, com o tempo surgiram novos campeões,"
+          "\nnovas lendas e novas ameaças,"
+          "\nmas isso já faz parte de outra história...")
 
-
-#if Se aliar antes de quebrar a maldição#
-
-
-#if se aliar quebrando a maldição#
-else:
-    print("")
-
-
-#if se aliar quebrando a maldição#
-
-
+print("As três Lendas de Gammelt Rike agradecem por ter jogado!"
+      "\nAssinado:"
+      "\nHenrique Macadura , o Mago      TIA:31811231"
+      "\nLeonardo Depercia , o Guerreiro TIA:31832091"
+      "\nVinícius Castelani, o Arqueiro  TIA:31860842")
 input()
