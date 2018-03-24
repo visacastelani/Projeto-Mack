@@ -363,7 +363,7 @@ if caminho == 1:
 
         else:
             print("Não há futuro para alguém morto")
-
+                ###################arrumar Não está funcionando#########################
     if cabana == 2:
         print(nome," decide então acampar em uma clareira próxima."
           "\nEra melhor e mais seguro, e estava uma noite agradável..")
@@ -528,8 +528,9 @@ if caminho2 == 1:
                                   "\nDo que adianta não ter me transformado em um monstro fisicamente, mas mentalmente ter me transformado no pior monstro que já existiu?"
                                   "\nDeixo esse recado para qualquer alma que ainda lembra como se lê."
                                   "\nMeu nome é Azaghal, e estou prestes a rever meus amados..."    
-                                  "\n-----------------------------------------------------------------------------------------------------------------------------------------------")
-                                 ##############RESUMIR A VIAGEM ( USAR TERMOS GENÉRICOS, QUE SIRVAM PARA OS DOIS CAMINHOS ##################
+                                  "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
+                                  "\nDepois de absorver as informações, retornou ao caminho da floresta.")
+                                 
                         break
             else:
                 print("\nEnfrentar o monstro e acabar morto por um pedaço"
@@ -599,12 +600,12 @@ if caminho2 == 2:
 
 ####FIM CAMINHO 2
 
-print("\n\nEm seu mapa agora,",nome," via que apenas alguns poucos dias de viagem o impediam de chegar ao Reino."
+print("\n\nEm seu mapa agora,",nome," via que apenas alguns poucos dias de viagem o impediam de chegar ao Castelo Real."
       "\nPensava se durante a sua viagem tinha aprendido o bastante para enfrenter o que quer que seja"
       "\n o mal que estivesse assolando essas terras."
       "\nMas uma coisa",nome," sabia. Teria que fazer escolhas."
       "\n\nDois dias depois..."
-      "\n",nome," jà conseguia ver is altos muros do castelo."
+      "\n",nome," jà conseguia ver os altos muros do castelo."
       "\nO que outrora expressava sua força e grandeza,"
       "\nsuas torres cobertas de fumaça mostram apenas a decadência do Reino."
       "\nAli se encontraria seu destino, e ",nome," estava pronto para decidi-lo.")
@@ -624,9 +625,9 @@ if castelo == 1:
           "\nImaginava se a biblioteca ainda guardava um pouco da sua antiga majestia."
           "\nTomou então o caminho pelas escadas e se apressou para a muralha."
           "\n\nNo alto, viu o pátio principal, as estalagens e as forjas, tudo que"
-          "\nainda estava vivo em sua memória, agora estava destruído. Então pensou consigo mesmo: "
-          "\n\n- O que fez aquela Bruxa?"
-          "\nChegara então à biblioteca, se assemelhava pouco ao que costumava ser, mas alguns"
+          "\nainda estava vivo em sua imaginação, agora estava destruído. Então pensou consigo mesmo: "
+          "\n\n- O que aquela Brux fez ?"
+          "\nChegara então à biblioteca, alguns"
           "\ndos pergaminhos ainda pareciam intactos."
           "\nDuas coisas então lhe chamaram a atenção: ")
     print("\n\n################## ESCOLHA ##################\n\n")          
@@ -634,51 +635,93 @@ if castelo == 1:
     biblioteca = int(input("\n(1) A seção de livros de Magia Antiga estava completamente revirada."
                            "\nCom certeza, se alguem soubesse o que procurava, teria encontrado ali."
                            "\n(2) Os antigos pergaminhos estavam espalhados pela mesa, notou ainda"
-                           "\nque algum tipo de documento tinha sido queimado ali."))
+                           "\nque algum tipo de documento tinha sido queimado ali.\n"))
     if biblioteca == 1:
-        print("")
+        print("Depois de procurar algo útil, você acaba de encontrar um livro sobre a Era de Ouro do reino:"
+        "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
+        "\nEssa é a história de Axxi’s, o Paladino Negro."
+        "\nViveu na era dourada do reino, durante o reinado do Rei Aragorn."
+        "\nDesde pequeno foi treinado arduamente para um dia ser digno do título de Paladino."
+        "\nNa noite de véspera da coroação do Príncipe Eldarion, o reino foi atacado por um dragão negro como a noite."
+        "\nMuitos campeões tentaram acabar com a fera, mas não foram pareôs,"
+        "\napenas Axxi’s teve êxito, depois do ocorrido, ele ficou conhecido como “o Paladino Negro”."
+        "\nCujo foi um dos três líderes da Grande Guerra das Bruxas, o reino de Gammelt Rike prevaleceu,"
+        "\nmas o preço foi muito alto, houve muitas baixas, incluindo a do Paladino Negro."
+        "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
+        "\nDecidiu então seguir em frente.")
 
     ## ELSE biblioteca == 2
     else:
-        print("")
+        print("Você tenta ler as partes legíveis, porém pedaços estão faltando..."
+        "\nDecidiu então seguir em frente.")
 
 
 #### ELSE castelo == 2
 else:
-    print("\nExigiam espiritos corajosos, as masmorras. Suas lembranças deste lugar são um pouco escuras,"
-          "\nMas quem sabe o que encontraria naquela porta?"
+    print("\nExigiam espiritos corajosos, as masmorras."
           "\nTomou então as escadas, e se dirigiu para as celas."
-          "\nGrilhões de ferro prendidos as paredes, um ambiente extremamente úmido e pouquíssima luz, a não ser a das torchas."
+          "\nGrilhões de ferro prendidos as paredes, um ambiente extremamente úmido e pouquíssima luz, a não ser a das tochas."
           "\nQuem passara os dias ali, não teve uma boa estadia, pensou."
           "\nQuanto mais fundo ia, mais sinistras as paredes pareciam. As sombras que criptavam"
-          "\ndas chamas da torcha pareciam dançar de maneira ofensiva, fazendo com que ",nome," apertasse ainda mais o passo."
+          "\ndas chamas da tocha pareciam dançar de maneira ofensiva, fazendo com que ",nome," apertasse ainda mais o passo."
           "\nAté que então, chegou a uma sala com uma grande mesa de madeira no centro."
           "\nSobre a mesa, estavam alguns livros e pergaminhos."
           "\nAo fundo da sala, uma porta enorme de ferro, sem nenhum espaço para bisbilhotar por ela."
-          "\nSem dúvidas, aquela era a porta que recordava quando criança.")
+          "\nSem dúvidas, aquela era a porta que possuía algo intrigante.")
 
     print("\n\n################## ESCOLHA ##################\n\n")
 
     masmorra = int(input("\n(1) Talvez alguns daqueles documentos pudessem ser úteis, poderia dar uma olhada."
-                         "\n(2) Com certeza algo estava guardado lá dentro, algo...ou alguém.."))
+                         "\n(2) Com certeza algo estava guardado lá dentro, algo...ou alguém..\n"))
 
     if masmorra == 1:
-        print("")
-
-
+        print("Após procurar por alguns minutos,",nome,"encontrou um livro antigo"
+              "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
+              "\nEssa é a história de David, o Bárbaro" 
+              "\nEm uma noite de inverno, o povo das montanhas crescia um pouco mais, pois nascerá o primogênito do fundador da Vila da Montanha."
+              "\nAs últimas palavras da mãe foi que o bebê se chamaria David, após isso ela falecera."
+              "\nDavid foi criado como qualquer garoto que vivia nas montanhas a leste do castelo real."
+              "\nSeu pai, Dave, o grande fundador da Vila da Montanha o ensinara tudo, Dave era um grande amigo e companheiro de guerra do Rei Aragorn."
+              "\nSua função em Gammelt Rike era vigiar as muralhas que protegiam o reino."
+              "\nDavid sabia que em um futuro próximo, iria adquirir o dever do pai."
+              "\nEm um amanhecer nada agradável, seu pai avistou cinco dezenas de Orcs vindo à direção dos muros."
+              "\nOs bárbaros batalharam junto ao exército real, Dave, entretanto fora ferido."
+              "\nO Rei Aragorn levou Dave às pressas para o castelo real, onde tentariam salvar sua vida, porém ele falecera no caminho."
+              "\nDavid honrou o legado de seu pai, e tomou seu lugar como vigia."
+              "\nComo todos os cidadãos de Gammelt Rike sabem, quando as vésperas da Guerra das Bruxas, o Rei Eldarion o convocou para o concelho e a batalha."
+              "\nEssa foi a última vez em que David, o Bárbaro entrou em uma batalha, e a primeira em que não saiu de uma."
+              "\n-----------------------------------------------------------------------------------------------------------------------------------------------")
+        
 
     ##ELSE masmorra == 2:
     else:
-        print("")
-
+        print(#######VER O NEGÓCIO DA MÃE##################)
 
 
 
 print("\nApós um longo caminho enfim, se via em frente as portas da sala do trono."
       "\n",nome," Não sabia o que esperava encontrar depois daquelas portas, mas chegara a hora de enfrentar."
-      "\nTomou fôlego então e as empurrou, entrando ao salão principal."
+      "\nTomou fôlego e então as empurrou, entrando ao salão principal."
       "\nUma figura sinistra sentava no trono. Ainda possuía características humanas, mas não se parecia tanto com um."
       "\n",nome," então exclamou: "
-      "\n- Diga, ser amaldiçoado, é você o responsável pelo que acontecera com o Reino!?")
+      "\n- Diga, ser amaldiçoado, é você o responsável pelo que acontecera com o Reino!?"
+      "\n- Não, a Bruxa fez isso. Esse foi seu último feito."
+      "\n- Quem é você?"
+      "\n- Alguém insignificante."
+      "\n- Suas vestes, estão esfarrapadas, mas me parecem da releza..."
+      "\n- Sou apenas um monstro, um monstro com mínima consciência de minha vida anterior."
+      "\n- O que fazes no salão de meu pai?"
+      "\n- Como ousas? Você está prestes a ser morto!"
+      "\n- Espere! Qual seu nome???"
+      "\n- Rei Amon. Rei de um povo amaldiçoado..."
+      "\n- Pai?"
+      "\n- Pare de brincar com a minha mente! Irá se arrepender!"
+      "\n- Pai, sou eu",nome,"lembre de mim! Lute contra a maldição, seja o Rei que Gammelt Rike precisa!"
+      "\n- Não consigo mais..."
+      "\n- As três Lenda me disseram que a maldição pode ser quebrada de várias formas")
+#if Matar#
+#if Se aliar antes de quebrar a maldição#
+#if se aliar quebrando a maldição#
+
 
 input()
