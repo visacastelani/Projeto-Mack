@@ -294,40 +294,42 @@ if caminho == 1:
 
         if lutar == "LUTAR":
 
-                while hp > 0 or enemyHP > 0:
+            while hp > 0 or enemyHP > 0:
                         
-                        print("\nO inimigo irá atacar, defenda-se!")
+                    print("\nO inimigo irá atacar, defenda-se!")
                         #DANO RECEBIDO
-                        dmg = randint(0,2)
-                        hp = hp - dmg
-                        print("\n####   DANO RECEBIDO: ",dmg,
+                    dmg = randint(0,2)
+                    hp = hp - dmg
+                    print("\n####   DANO RECEBIDO: ",dmg,
                         "\n####   HP ATUAL:      " ,hp)
-                        if  hp == 0 or hp < 0:
-                                print("\n\nA batalha foi árdua, você lutou"
+                    if  hp == 0 or hp < 0:
+                        print("\n\nA batalha foi árdua, você lutou"
                                       " bravamente, mas infelizmente"
                                       " as forças das trevas venceram."
                                       "\n\nVocê esta morto!")
-                                vitoria = 0
-                                break
+                        break
+                        quit()
+                        
                         
                                    
                                                     
-                        print("\nSua vez de atacar!")
-                        #DANO CAUSADO
-                        dmg1 = randint(0,3)
-                        enemyHP = enemyHP - dmg1
-                        print("\n####   DANO CAUSADO: ", dmg1,
-                        "\n####   HP DO MONSTRO:", enemyHP)
+                    print("\nSua vez de atacar!")
+                    #DANO CAUSADO
+                    dmg1 = randint(0,3)
+                    enemyHP = enemyHP - dmg1
+                    print("\n####   DANO CAUSADO: ", dmg1,
+                    "\n####   HP DO MONSTRO:", enemyHP)
 
-                        input("\n\nAperte 'ENTER' para ir para a"
+                    input("\n\nAperte 'ENTER' para ir para a"
                                            " próxima rodada!")
 
                         
 
-                        if enemyHP == 0 or enemyHP < 0:
-                                print("\n\nVocê derrotou o inimigo!")
-                                vitoria = 1
-                                break
+                    if enemyHP == 0 or enemyHP < 0:
+                        print("\n\nVocê derrotou o inimigo!")
+                        vitoria = 1
+                        break
+
         if vitoria == 1:
             print("\n\nHavia um esqueleto dentro da cabana!"
                   "\nEle te atacou de surpresa, mas seu tempo"
@@ -364,7 +366,7 @@ if caminho == 1:
         else:
             print("Não há futuro para alguém morto")
                 ###################arrumar Não está funcionando#########################
-    if cabana == 2:
+    elif cabana == 2:
         print(nome," decide então acampar em uma clareira próxima."
           "\nEra melhor e mais seguro, e estava uma noite agradável..")
 
@@ -420,7 +422,7 @@ caminho2 = int(input("\n\n(1) A Leste, o caminho levava para Dodsgrotte, uma ant
 
 
 
-####COMEÇO CAMINHO 1 LESTE
+####COMEÇO CAMINHO 2 LESTE
 if caminho2 == 1:
     print("\n\nO espírito de aventura queimava forte em ",nome,".\n"
           "Decidiu então partir para Dodsgrotte. Quem sabe quais mistérios"
@@ -481,40 +483,39 @@ if caminho2 == 1:
                 
             elif chance == 2 or chance == 3:
                 print("\nO inimigo te notou, prepare-se!")
-                while hp >0 or enemyHP >0:
-        
-                    if hp >0 or enemyHP >0:
-
-                        #DANO RECEBIDO
-                        dmg = randint(0,2)
-                        hp = hp - dmg
+                hp = 10
+                enemyHP = 10
+                while hp >0 or enemyHP >0:              
+                    #DANO RECEBIDO
+                    dmg = randint(0,2)
+                    hp = hp - dmg
                         
-                        #DANO CAUSADO
-                        dmg1 = randint(0,3)
-                        enemyHP = enemyHP - dmg1
+                    #DANO CAUSADO
+                    dmg1 = randint(0,3)
+                    enemyHP = enemyHP - dmg1
 
-                        print("\nO inimigo irá atacar, defenda-se!")
-                        print("\nDMG: ",dmg,
+                    print("\nO inimigo irá atacar, defenda-se!")
+                    print("\nDMG: ",dmg,
                             "\nHP: " ,hp)
-                        if  hp == 0 or hp < 0:
-                            print("\n\n\n\nVocê lembra das histórias que contavam sobre os bosques."
+                    if  hp == 0 or hp < 0:
+                        print("\n\n\n\nVocê lembra das histórias que contavam sobre os bosques."
                                   "\nInfelizmente,todas elas eram verdadeiras."
                                   "\nVocê esta morto!")
-                            break
+                        quit()
+                        break
                             
+                    print("\nSua vez de atacar!")
+                    print("\nDMG no Monstro: ", dmg1,
+                          "\nHP do Monstro:", enemyHP)
 
-                        print("\nSua vez de atacar!")
-                        print("\nDMG no Monstro: ", dmg1,
-                                "\nHP do Monstro:", enemyHP,)
-
-                        input("\n\nAperte 'ENTER' para ir para a"
-                            " próxima rodada!")
+                    input("\n\nAperte 'ENTER' para ir para a"
+                                            " próxima rodada!")
 
 
                         
 
-                        if enemyHP == 0 or enemyHP < 0:
-                            print("\n\n\n\nVocê derrotou o inimigo!"
+                    if enemyHP == 0 or enemyHP < 0:    
+                         print("\n\n\n\nVocê derrotou o inimigo!"
                                   "\n\nA criatura medonha solta um grito antes de cair"
                                   " no chão, parecia ter sido morta uma segunda vez"
                                   "\nPodendo agora olhar com mais calma",nome," olhou pelo local até encontrar uma bolsa cheia de pergaminhos,"
@@ -530,18 +531,15 @@ if caminho2 == 1:
                                   "\nMeu nome é Azaghal, e estou prestes a rever meus amados..."    
                                   "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
                                   "\nDepois de absorver as informações, retornou ao caminho da floresta.")
+                    break
                                  
-                        break
-            else:
-                print("\nEnfrentar o monstro e acabar morto por um pedaço"
+
+            
+        elif stealth == 2:
+            print("\nEnfrentar o monstro e acabar morto por um pedaço"
                       " de papel era um risco real.",
                       nome," decidiu então, voltar à entrada.")
                         
-
-
-
-
-
     elif gruta == 2:
         print("\nNenhum documento valeria a pena arriscar o próprio pescoço."
             "\n",nome," decidiu retornar à entrada.")
@@ -571,7 +569,7 @@ if caminho2 == 2:
                      "\n(2) -Recolher materiais para preparar uma fogueira.\n"))
 
     if vila == 1:
-            print("\nA escolha estava clara e ",nome," sabia o que procurar."
+        print("\nA escolha estava clara e ",nome," sabia o que procurar."
                   "\nQualquer informação sobre a maldição iria ajudar em sua jornada."
                   "\n\nUma das contruções lhe chamou a atenção,"
                   "\numa cabana grande de dois andares, parecia ser uma das"
@@ -674,8 +672,8 @@ else:
     masmorra = int(input("\n(1) Talvez alguns daqueles documentos pudessem ser úteis, poderia dar uma olhada."
                          "\n(2) Com certeza algo estava guardado lá dentro, algo...ou alguém..\n"))
 
-    if masmorra == 1:
-        print("Após procurar por alguns minutos,",nome,"encontrou um livro antigo"
+if masmorra == 1:
+    print("Após procurar por alguns minutos,",nome,"encontrou um livro antigo"
               "\n-----------------------------------------------------------------------------------------------------------------------------------------------"
               "\nEssa é a história de David, o Bárbaro" 
               "\nEm uma noite de inverno, o povo das montanhas crescia um pouco mais, pois nascerá o primogênito do fundador da Vila da Montanha."
@@ -693,9 +691,9 @@ else:
               "\n-----------------------------------------------------------------------------------------------------------------------------------------------")
         
 
-    ##ELSE masmorra == 2:
-    else:
-        print(#######VER O NEGÓCIO DA MÃE##################)
+##ELSE masmorra == 2:
+else:
+    print("")
 
 
 
@@ -722,6 +720,5 @@ print("\nApós um longo caminho enfim, se via em frente as portas da sala do tro
 #if Matar#
 #if Se aliar antes de quebrar a maldição#
 #if se aliar quebrando a maldição#
-
 
 input()
