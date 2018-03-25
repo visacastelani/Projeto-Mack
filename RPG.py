@@ -241,7 +241,7 @@ print("\n-Enfim chegara a hora."
       "\n\n-Os antigos já contavam histórias sobre bruxas",nome,"."
       "\n Se quiser saber sobre a fonte do mal, consulte os documentos"
       " que encontrar ao longo da sua jornada."
-      "\n\n Mas lembre-se. a batalha nem sempre é a melhor opção!")
+      "\n\n Mas lembre-se, a batalha nem sempre é a melhor opção!")
 #########PRÓLOGO
 
 print(nome," então partiu para o Reino. O caminho"
@@ -394,12 +394,12 @@ elif caminho == 2:
               "\n e ladrões, mas nesse dia me senti como se fosse Agar, o Herói."
               "\n-----------------------------------------------------------------------------------------------------------------------------------------------")
     
-print("\n\n\nEnfim, passado alguns dias",nome," já conseguia ver a grande Floresta Mork."
+print("\n\n\nEnfim, passado alguns dias,",nome," já conseguia ver a grande Floresta Mork."
       "\nTodos a temiam, estava claro o por quê."
       "\nÁrvores altas como gigantes e sombras negras que espantavam qualquer viajante"
       "\nAquele não era um lugar para ficar de passagem.\n",nome," precisava logo"
       " sair dali."
-      "\n\nO problema então, surgia ali.\nEm seu mapa",nome," observou uma bifurcação"
+      "\n\nO problema então, surgia ali.\nEm seu mapa,",nome," observou uma bifurcação"
       ", ambos os caminhos levavam ao castelo, o epicentro da maldição, porém passavam por locais"
       " diferentes,\nmas igualmente ameaçadores")
 
@@ -407,7 +407,7 @@ print("\n\n################## ESCOLHA ##################\n\n")
 
 caminho2 = int(input("\n\n(1) A Leste, o caminho levava para Dodsgrotte, uma antiga gruta"
                      " dita ser abandonada, mas que era lar da poderosa Bruxa em tempos antigos."
-                     "\n(2) A Oeste, Landsbyen, uma vila de elfos, que outrora exalava sabedoria"
+                     "\n(2) A Oeste, Landsbyen, uma vila de elfos, que outra hora exalava sabedoria"
                      " antiga.\n"))
 
 
@@ -417,7 +417,7 @@ if caminho2 == 1:
     print("\n\nO espírito de aventura queimava forte em ",nome,".\n"
           "Decidiu então partir para Dodsgrotte. Quem sabe quais mistérios"
           " ainda podiam ser revelados no lar da Bruxa."
-          "\n\nAlguns dias de viagem separavam ",nome," de seu destino, era melhor se apressar,"
+          "\n\nAlguns dias de viagem separavam ,",nome,", de seu destino, era melhor se apressar,"
           "\nventos sinistros sopraram, e algo das sombras parecia lhe observar."
           "\nCom mais alguns dias de viagem ",nome," se deparou com algumas placas indicando o caminho"
           "\npara o reino, sabia que então, a Gruta estava perto\n"
@@ -614,7 +614,7 @@ if castelo == 1:
           "\nTomou então o caminho pelas escadas e se apressou para a muralha."
           "\n\nNo alto, viu o pátio principal, as estalagens e as forjas, tudo que"
           "\nainda estava vivo em sua imaginação, agora estava destruído. Então pensou consigo mesmo: "
-          "\n\n- O que aquela Brux fez ?"
+          "\n\n- O que aquela Bruxa fez ?"
           "\nChegara então à biblioteca, alguns"
           "\ndos pergaminhos ainda pareciam intactos."
           "\nDuas coisas então lhe chamaram a atenção: ")
