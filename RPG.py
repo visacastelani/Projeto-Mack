@@ -8,11 +8,12 @@ comecar = comecar.upper()
 
 
 while comecar != "START":
-    print("\n\nPor favor, digite '5START'")
+    print("\n\nPor favor, digite 'START'")
     comecar = str(input('\n\nDigite "START" para começar o jogo '))
     comecar = comecar.upper()
 if comecar == "START":
-    print("\n\nVocê está prestes a vivenciar uma experiência única!"
+    print("\nBem-vindo às Lendas de Gammelt Rike!" 
+          "\n\nVocê está prestes a vivenciar uma experiência única!"
                 "\n\nMas antes, um pequeno tutorial:"
                 "\nO <jogo> é narrado, e opções de diálogo são dadas ao protagonista."
                 " Para escolhe-las, digite apenas o número que"
@@ -363,8 +364,8 @@ if caminho == 1:
 elif caminho == 2:
         print("\n\nMesmo com receio do que iria encontrar,",nome," escolheu ir pelas minas.\n"
               "O caminho pela mina era assustador.\nTudo rangia e fazia barulhos estranhos"
-              "\nAcendera uma torcha para iluminar o seu caminho e adentrou a mina."
-              "\nAlém da escuridão, o ambiente o sufocava e tornavam seus passos mais pesados.\nn",
+              "\nAcendera uma tocha para iluminar o seu caminho e adentrou a mina."
+              "\nAlém da escuridão, o ambiente o sufocava e tornavam seus passos mais pesados.\n",
               nome," então decidiu descansar próximo ao que parecia ser um alojamento"
               " dos antigos trabalhadores.\n"
               "Ao vasculhar alguns velhos sacos largados por ali em busca de algo para comer",
@@ -383,7 +384,7 @@ elif caminho == 2:
               "\n ouvi a bruxa dizer que naquele livro existia uma maldição, mas uma maldição tão poderosa que seria necessário um sacrifício."
               "\n O lacaio disse que era muito arriscado, pois a vida de sua mestra seria perdida no processo."
               "\n Levei então as informações até o Rei Arathorn II, neto do Grande Rei Eldarion."
-              "\n Ele reuniu o grande concelho, que incluía as três lendas, as deu ordens que não conheço,"
+              "\n Ele reuniu o grande conselho, que incluía as três lendas, as deu ordens que não conheço,"
               "\n apenas sei que os três não foram mais vistos em Gammelt Rike e que os outros campeões reais foram caçar a bruxa."
               "\n Depois de dois dias de busca sem nenhum êxito, o Rei ordenou que os cidadãos deveriam se recompor,"
               "\n pois iria ser servida uma ceia ao meio dia para compensar seus esforços."
@@ -751,7 +752,7 @@ print("\nApós um longo caminho enfim,",nome," se via em frente as portas da sal
       "\n- Não, a Bruxa fez isso. Esse foi seu último feito."
       "\n- Quem é você?"
       "\n- Alguém insignificante."
-      "\n- Suas vestes, estão esfarrapadas, mas me parecem da releza..."
+      "\n- Suas vestes, estão esfarrapadas, mas me parecem da realeza..."
       "\n- Sou apenas um monstro, um monstro com mínima consciência de minha vida anterior."
       "\n- O que fazes no salão de meu pai?"
       "\n- Como ousas? Você está prestes a ser morto!"
@@ -766,7 +767,7 @@ print("\n\n################## ESCOLHA ##################\n\n")
 ##################################FINALIZAR CONTEÚDO AQUI
 final = int(input("\n(1) O Rei Amom não parece mais te reconhecer, devido a maldição, ele se tornou um inimigo como todos os outros. Prepare-se!"
                   "\n(2) O Rei amaldiçoado, lembra de você e te oferece um lugar na Sala do Trono. Se aliar ao seu pai amaldiçoado."
-                  "\n(3) As Três Lendas te deram um colar que te protege do feitiço lançado pela Bruxa."
+                  "\n(3) As Três Lendas te deram um colar que te protege do feitiço lançado pela Bruxa,"
                   "\nvocê decide dar o colar para seu pai e tentar quebrar o feitiço."
                   "\n"))
 #if Matar#
@@ -903,7 +904,7 @@ elif masmorra == 1:
           "\n- Como assim? Você governará Gammelt Rike a partir de hoje."
           "\n- Se os senhores acharem que é minha hora, então governarei."
           "\n\nCom o passar dos anos,",nome,classe1,"reconstruiu o Reino de Gammelt Rike, com a ajuda de seus habitantes."
-          "\nSeu reinado foi prospero, com o tempo surgiram novos campeões,"
+          "\nSeu reinado foi próspero, com o tempo surgiram novos campeões,"
           "\nnovas lendas e novas ameaças,"
           "\nmas isso já faz parte de outra história...")
 
@@ -921,7 +922,7 @@ elif masmorra == 2:
           nome,",também não aguentou todo este sofrimento, mas teve que ser forte,"
           "\nnão por ele, mas pelo seu povo."
           "\n\nCom o passar dos anos,",nome,classe1,"reconstruiu o Reino de Gammelt Rike, com a ajuda de seus habitantes."
-          "\nSeu reinado foi prospero, com o tempo surgiram novos campeões,"
+          "\nSeu reinado foi próspero, com o tempo surgiram novos campeões,"
           "\nnovas lendas e novas ameaças,"
           "\nmas isso já faz parte de outra história...")
     
