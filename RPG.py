@@ -932,6 +932,6 @@ print("As três Lendas de Gammelt Rike agradecem por ter jogado!"
       "\nHenrique Macadura , o Mago      TIA:31811231"
       "\nLeonardo Depercia , o Guerreiro TIA:31832091"
       "\nVinícius Castelani, o Arqueiro  TIA:31860842"
-      "\n\nOBRIGADO POR JOGAREM!!!"
+      "\n\nOBRIGADO POR JOGAR!!!"
       "\nVOCÊ ALCANÇOU O",nota)
 input()
